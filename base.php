@@ -7,15 +7,11 @@
     </div>
   <![endif]-->
 
-  <?php
-    do_action('get_header');
-    // Use Bootstrap's navbar if enabled in config.php
-    if (current_theme_supports('bootstrap-top-navbar')) {
-      get_template_part('templates/header-top-navbar');
-    } else {
-      get_template_part('templates/header');
-    }
-  ?>
+  <?php get_template_part('templates/header-top-navbar'); ?>
+
+
+      <div class="body-wrap">
+      <div class="container">
 
     <div class="row" role="document">
       <main class="main <?php echo roots_main_class(); ?>" role="main">

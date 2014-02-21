@@ -1,0 +1,149 @@
+@import "../colors";
+
+.big-side-nav, .little-side-nav, .top-nav, .medium-side-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.big-side-nav, .little-side-nav, .content-area {
+  margin-top: 30px;
+  clear: both;
+}
+
+.big-side-nav {
+  border-right: 1px solid $light-grey;
+  padding: 0 0 30px 0;
+  ul {
+    li {
+      &.active {
+        a {
+          font-weight: 400;
+        }
+      }
+      a {
+        color: $red;
+        font-size: 1.5em;
+        font-weight: 200;
+        border-bottom: 1px solid $light-grey;
+        display: block;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.little-side-nav {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 45px;
+  ul {
+    li {
+      line-height: 15px;
+      margin-bottom: 15px;
+      &.active a {
+        font-weight: 600;
+      }
+      a {
+        color: $dark-grey;
+        font-size: 0.8em;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.medium-side-nav {
+  border-right: 1px solid $light-grey;
+  h5 {
+    color: light-grey;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $mid-grey;
+  }
+  ul {
+    li {
+      a {
+        color: $blue;
+      }
+    }
+  }
+}
+
+.top-nav {
+  border-bottom: 1px solid #dddddd;
+  overflow: auto;
+  margin-bottom: 10px;
+  ul {
+    li {
+      float: left;
+      display: inline-block;
+      a:hover {
+        color: $blue;
+      }
+      &.active {
+        a {
+          color: $dark-grey;
+          font-weight: 600;
+        }
+      }
+      a {
+        color: $red;
+        font-size: 0.8em;
+        padding: 0 8px 0 0;
+      }
+    }
+  }
+}
+
+.content-area {
+  border: 1px solid #cccccc;
+  padding: 30px;
+  box-shadow: 0 0 3px rgba(black, 0.5);
+  color: #444444;
+  img {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.6em;
+    color: rgba($red, 0.8);
+  }
+  h3 {
+    font-size: 1.4em;
+    color: rgba($red, 0.6);
+  }
+  h3 {
+    font-size: 1.2em;
+    color: rgba($red, 0.4);
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  p.leader {
+    font-size: 1.3em;
+  }
+}
+
+.social {
+  margin: 20px 0;
+  h5 {
+    text-transform: uppercase;
+  }
+}
+
+.images {
+  img {
+    float: left;
+    width: 48%;
+    margin: 1%;
+  }
+}

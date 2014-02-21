@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'assets/css/main.min.css' : 'assets/scss/app.scss'
+          'assets/css/cauley.min.css' : 'assets/scss/app.scss'
         }
       }
     },
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
     version: {
       options: {
         file: 'lib/scripts.php',
-        css: 'assets/css/main.min.css',
+        css: 'assets/css/cauley.min.css',
         cssHandle: 'roots_main',
         js: 'assets/js/scripts.min.js',
         jsHandle: 'roots_scripts'
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
           livereload: false
         },
         files: [
-          'assets/css/main.min.css',
+          'assets/css/cauley.min.css',
           'assets/js/scripts.min.js',
           'templates/*.php',
           '*.php'
@@ -93,7 +93,7 @@ module.exports = function(grunt) {
     },
     clean: {
       dist: [
-        'assets/css/main.min.css',
+        'assets/css/cauley.min.css',
         'assets/js/scripts.min.js'
       ]
     }

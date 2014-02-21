@@ -1,0 +1,23 @@
+@import "colors";
+
+.no-list {
+  li {
+    list-style: none;
+  }
+}
+
+.inline {
+  display: inline;
+}
+
+.gold-bottom-border {
+  border-bottom: 5px solid $gold;
+}
+
+.gold-top-border {
+  border-bottom: 5px solid $gold;
+}
+
+.caps {
+  text-transform: uppercase;
+}

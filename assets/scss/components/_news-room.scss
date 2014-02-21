@@ -1,0 +1,37 @@
+@import "../_colors";
+
+.news-room.component {
+  overflow: auto;
+  .side-nav {
+    a {
+      color: $blue;
+      &:hover {
+        color: $red;
+      }
+    }
+    ul {
+      margin-bottom: 20px;
+      & > li {
+        font-weight: bold;
+        & > ul {
+          & > li {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    ul {
+      margin: {
+        left: 0;
+        right: 0;
+      };
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    }
+  }
+}

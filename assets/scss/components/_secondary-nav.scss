@@ -1,0 +1,20 @@
+@import "../_util";
+@import "../_colors";
+
+.secondary-nav {
+  ul {
+    @extend .no-list;
+    float: right;
+    li {
+      @extend .inline;
+      a {
+        color: $mid-grey;
+        display: inline-block;
+        padding: 4px;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

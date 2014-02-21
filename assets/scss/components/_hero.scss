@@ -1,0 +1,63 @@
+/* @import "compass/css3/transition";*/
+@import "../_colors";
+@import "../_util";
+
+.hero {
+  @extend .gold-bottom-border;
+  height: 400px;
+  overflow: hidden;
+  ul {
+    @extend .no-list;
+    padding: 0;
+    margin: 0;
+    li {
+      position: relative;
+      a {}
+      .caption {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        h1, h2, h3, h4, h5 {
+          background-color: rgba(0, 0, 0, 0.5);
+          text-align: right;
+          color: white;
+          display: inline-block;
+          float: right;
+          clear: both;
+          padding: 3px 10px;
+        }
+        ul.hero-buttons {
+          padding: 0;
+          clear: both;
+          li {
+            list-style: none;
+            display: inline-block;
+            a {
+              display: inline-block;
+              background-color: rgba($blue, 0.9);
+              padding: 3px 7px;
+              /* @include transition(background-color, 300ms);*/
+              .title {
+                font-size: 0.8em;
+                color: white;
+                text-transform: uppercase;
+                /* @include transition(color, 300ms);*/
+              }
+              .text {}
+              color: white;
+              &:hover {
+                background-color: rgba(black, 0.9);
+                  /*@include transition(background-color, 300ms);*/
+                .title {}
+                .text {
+                  color: white;
+                    /*@include transition(color, 300ms);*/
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
