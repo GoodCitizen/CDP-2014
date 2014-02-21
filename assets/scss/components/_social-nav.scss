@@ -1,0 +1,21 @@
+@import "../util";
+@import "../colors";
+
+.social-nav {
+  ul {
+    float: right;
+    li {
+      list-style: none;
+      display: inline;
+      a {
+        color: $light-grey;
+        font-size: 1.5em;
+        display: inline-block;
+        margin: 50px 0 0 10px;
+        &:hover {
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}

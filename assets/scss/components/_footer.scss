@@ -1,0 +1,99 @@
+@import "../util";
+@import "../type";
+
+footer {
+  padding: 60px 0 0 0;
+  background-color: #08303c;
+  @extend .gold-top-border;
+  color: white;
+  .search {
+    input {
+      background-color: rgba(white, 0.5);
+      padding: 30px;
+    }
+  }
+  .twitter-feed {
+    h1, h2, h3, h4, h5, .fa {
+      color: rgba(white, 0.6);
+      text-transform: uppercase;
+    }
+    .fa {
+      margin-right: 10px;
+    }
+    .follow {
+      float: right;
+      margin-top: 15px;
+      color: rgba(white, 0.5);
+      a {
+        color: white;
+      }
+    }
+    ul {
+      li {
+        margin-bottom: 30px;
+        color: rgba(white, 0.5);
+        a {
+          color: $red;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  a {
+    color: rgba(white, 0.5);
+    &:hover {
+      color: rgba(white, 1);
+    }
+  }
+  ul {
+    margin: 30px 0 0 0;
+    // second level
+    li {
+      list-style: none;
+      ul {
+        margin: 0 0 30px 0;
+        li {
+          a {
+            color: rgba(white, 0.5);
+            @extend .sans;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+    // first level
+    & > li {
+      > a {
+        @extend .slab;
+        color: white;
+      }
+      &[data-name="When"] {
+        > a {
+          color: $gold;
+        }
+      }
+      &[data-name="Where"] {
+        > a {
+          color: $red;
+        }
+      }
+      &[data-name="How"] {
+        > a {
+          color: $blue;
+        }
+      }
+    }
+  }
+  .sub-footer {
+    margin-top: 20px;
+    background-color: black;
+    p {
+      text-align: right;
+      color: white;
+      padding: 30px 0;
+      font-size: 0.8em;
+    }
+  }
+}

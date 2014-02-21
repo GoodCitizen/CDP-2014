@@ -1,0 +1,83 @@
+@import "../colors";
+@import "../type";
+@import "../util";
+@import "../buttons";
+
+.main-nav {
+  & > ul {
+    @extend .no-list;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 500;
+    > li {
+      list-style: none;
+      float: left;
+      > a {
+        @extend .slab;
+        @extend .button;
+        font-size: 1.3em;
+        display: block;
+        background: $gold;
+        color: white;
+        border-radius: 5px;
+        padding: 3px 15px;
+        margin: 0 10px 0 0;
+      }
+      &:hover {
+        a {
+          border: {
+            bottom-left-radius: 0;
+            bottom-right-radius: 0;
+          };
+        }
+        .mega-menu {
+          display: block;
+        }
+      }
+    }
+    > li[data-name="When"] {
+      > a {
+        background-color: $gold;
+      }
+      .mega-menu {
+        background-color: $gold;
+      }
+    }
+    > li[data-name="Where"] {
+      > a {
+        background-color: $red;
+      }
+      .mega-menu {
+        background-color: $red;
+      }
+    }
+    > li[data-name="How"] {
+      > a {
+        background-color: $blue;
+      }
+      .mega-menu {
+        background-color: $blue;
+        height: 200px;
+        .inner-wrap {
+          height: 170px !important;
+        }
+        .triple-drop {
+          ul {
+            width: 250px;
+            height: 130px;
+            li {
+              ul {
+                left: 250px;
+                width: 300px;
+                li {
+                  ul {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "colors";
+/* @import "compass/css3/transition";*/
+
+h1, h2, h3, h4, h5, h6 {
+  @extend .slab;
+  color: $red;
+}
+
+.slab {
+  font-family: "Roboto Slab", serif;
+}
+
+.sans {
+  font-family: "Open Sans";
+}
+
+body {
+  @extend .sans;
+}
+
+a, .link {
+  /* @include transition(color 300ms);*/
+  color: $blue;
+  &:hover {
+    /* @include transition(color 300ms);*/
+    color: $red;
+  }
+}

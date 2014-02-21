@@ -1,0 +1,73 @@
+@import "../_colors";
+/* @import "compass/css3/transition";*/
+
+ul.mega-menu {
+  display: none;
+  /* @include transition(display 300ms);*/
+  z-index: 500;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(white, 1);
+  height: 300px;
+  width: 650px;
+  position: absolute;
+  min-height: 130px;
+  z-index: 5;
+  li {
+    list-style: none
+  }
+  li.inner-wrap {
+    background-color: rgba(white, 0.5);
+    height: 280px;
+    width: 620px;
+    padding: 2%;
+    margin: 2%;
+    display: block;
+  }
+  ul.single-column {
+    background-color: white;
+  }
+}
+
+.triple-drop {
+  ul {
+    width: 130px;
+    margin: 0;
+    background-color: rgba(white, 0.3);
+    height: 260px;
+    position: absolute;
+    li {
+      position: relative;
+      a {
+        padding: 15px;
+        font-size: 1.4em;
+        font-weight: 200;
+        color: $dark-grey;
+      }
+    }
+    ul  { // second level
+      top: 0;
+      left: 130px;
+      width: 230px;
+      background-color: rgba(white, 0.5);
+      li:first {
+        padding-top: 10px;
+      }
+      li {
+        a {
+          font-size: 1em;
+        }
+        ul { // third level
+          top: 0;
+          left: 230px;
+          background-color: rgba(white, 0.8);
+          padding-top: -10px;
+          li {
+            a {}
+          }
+        }
+      }
+    }
+  }
+  // # first level
+}

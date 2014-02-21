@@ -5,6 +5,35 @@
 @import "foundation/normalize.scss";
 @import "foundation/foundation.scss";
 
+@import "buttons";
+@import "colors";
+@import "global";
+@import "type";
+@import "util";
+
+@import "components/footer";
+@import "components/header";
+@import "components/hero";
+@import "components/horizontal-image-slider";
+@import "components/logo";
+@import "components/main-nav";
+@import "components/mega-menu";
+@import "components/news-listing";
+@import "components/news-room";
+@import "components/related";
+@import "components/search";
+@import "components/secondary-nav";
+@import "components/social-nav";
+
+
+@import "containers/content-detail";
+@import "containers/home";
+
+.body-wrap {
+  min-height: 1000px;
+  overflow: auto;
+}
+
 /* ==========================================================================
    Base
    ========================================================================== */

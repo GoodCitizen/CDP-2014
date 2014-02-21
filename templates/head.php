@@ -8,5 +8,7 @@
 
   <?php wp_head(); ?>
 
+  <link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>assets/img/favicon.png">
+
   <link rel="alternate" type="application/rss+xml" title="<?php echo get_bloginfo('name'); ?> Feed" href="<?php echo esc_url(get_feed_link()); ?>">
 </head>
