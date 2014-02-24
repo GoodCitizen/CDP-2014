@@ -1,11 +1,3 @@
-<!--
-<footer class="content-info row" role="contentinfo">
-  <div class="small-12 columns">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-  </div>
-</footer>
--->
 <footer>
   <div class="container">
     <div class="row">
@@ -25,7 +17,7 @@
         <?php dynamic_sidebar('footer-left'); ?>
       </div>
       <div class="large-3 columns">
-        <?php dynamic_sidebar('footer-center'); ?>
+        <?php dynamic_sidebar('footer-right'); ?>
       </div>
     <div class="large-6 columns">
       <div class="twitter-feed">
@@ -37,17 +29,16 @@
         <div id="ourTweets" class="the-tweets"></div>
       </div>
     </div>
-</div>
-</div>
-<div class="sub-footer">
-<div class="container">
-<div class="row">
-<div class="large-12 columns">
-<p>Copyright © 2013 Center for Disaster Philanthropy. All rights reserved.</p>
-</div>
-</div>
-</div>
-</div>
+  </div>
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="large-12 columns">
+          <p>Copyright &copy; <?php echo date('Y'); ?> Center for Disaster Philanthropy. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <?php wp_footer(); ?>
