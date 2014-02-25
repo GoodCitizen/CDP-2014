@@ -48,6 +48,49 @@
        <?php wp_reset_query(); ?>
        </ul>
      </section>
+     
+     <div class="container home">
+       <div class="row">
+     
+     <div class="disaster-dashboard component">
+       <h1>Disaster Dashboard</h1>
+       <h2>Get the facts on currently unfolding disasters</h2>
+       <div class="horizontal-image-slider">
+         <div class="wrap">
+           <div class="container">
+             <ul>
+               
+               <?php query_posts('showposts=3&category_name=disaster-coverage'); ?>
+               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                 <li>
+    						   <?php if (has_post_thumbnail()): ?>
+    						   <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
+                    <a href="<?php the_permalink(); ?>" style="background-image:url(<?php echo $src[0]; ?>)">
+                      <div class="caption"><?php the_title(); ?></div>
+                    </a>
+                  <?php else: ?>
+                    <a href="<?php the_permalink(); ?>" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/disasters/fire.png)">
+                       <div class="caption"><?php the_title(); ?></div>
+                     </a>
+    							<?php endif; ?>
+                    
+       					  <?php endwhile; ?>
+       					  <?php endif; ?>
+                  <?php wp_reset_query(); ?>
+                </li>
+                <li>
+                  <a href="/disasters">
+                    <div class="caption">Disaster Archive</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+     </div> <!-- row -->
+   </div><!-- container home -->
 
   <div class="body-wrap">
     <div class="container">
