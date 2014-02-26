@@ -11,6 +11,7 @@
 @import "type";
 @import "util";
 
+@import "components/disaster-dashboard";
 @import "components/footer";
 @import "components/header";
 @import "components/hero";
@@ -58,9 +59,35 @@ body { }
    ========================================================================== */
 
 .content { }
-
-
-
+.disaster-dashboard{
+  h1{
+    font-weight: 700;
+  }
+}
+.horizontal-image-slider ul li a .caption {
+  bottom: -100px;
+  -webkit-transition: bottom 300ms;
+  -moz-transition: bottom 300ms;
+  -o-transition: bottom 300ms;
+  transition: bottom 300ms;
+  padding: 20px 15px;
+  background-color: rgba(57, 134, 168, 0.8);
+  height: 160px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: absolute;
+}
+.news-room{
+  h3{
+    font-weight: 300;
+  }
+}
+.news-listing{
+  h3{
+    font-weight: 300;
+  }
+}
 /* ==========================================================================
    Primary Content
    ========================================================================== */
