@@ -3,23 +3,26 @@
     <div class="row">
       <div class="large-6 columns logo">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo-trans-light-horizontal.png">
-      </div>
-      <div class="large-6 columns search">
-        <form role="search" method="get" action="<?php echo home_url('/'); ?>">
-          <div class="search">
-            <input type="search" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-3 columns">
-        <?php dynamic_sidebar('footer-left'); ?>
-      </div>
-      <div class="large-3 columns">
-        <?php dynamic_sidebar('footer-right'); ?>
+        <div class="large-3 columns">
+          <?php dynamic_sidebar('footer-left'); ?>
+        </div>
+        <div class="large-3 columns">
+          <?php dynamic_sidebar('footer-right'); ?>
+        </div>
       </div>
     <div class="large-6 columns">
+      <div class="newsletter-signup">
+        <h3 class="form-header">Stay Informed</h3>
+        <form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <input type=hidden name="oid" value="00Di0000000bICY">
+          <input type=hidden name="retURL" value="<?php echo home_url(); ?>/thank-you/">
+          <input class="footer-input" id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="First Name">
+          <input class="footer-input"  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="Last Name"> 
+          <input class="footer-input" id="email" maxlength="80" name="email" size="20" type="text" placeholder="Email">
+          <input class="button footer-btn" type="submit" name="submit">
+        </form>
+      </div>
+      <hr>
       <div class="twitter-feed">
         <div class="fa fa-twitter fa-2x"></div>
         <h3 class="inline">Latest Tweets</h3>
@@ -34,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="large-12 columns">
-          <p>Copyright &copy; <?php echo date('Y'); ?> Center for Disaster Philanthropy. All rights reserved.</p>
+        <p>Copyright &copy; <?php echo date('Y'); ?> Center for Disaster Philanthropy. All rights reserved.</p>
         </div>
       </div>
     </div>
