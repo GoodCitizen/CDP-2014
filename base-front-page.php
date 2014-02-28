@@ -10,44 +10,36 @@
   <?php get_template_part('templates/header-top-navbar'); ?>
   
 
-  <section class="hero">
-    <ul class="cycle-slideshow" data-cycle-next=".arrow.right" data-cycle-pause-on-hover="false" data-cycle-prev=".arrow.left" data-cycle-slides="&gt; li" data-cycle-speed="600" data-cycle-timeout="5000">
+  <section class='hero'>
+    <ul class='cycle-slideshow' data-cycle-next='.arrow.right' data-cycle-pause-on-hover='false' data-cycle-prev='.arrow.left' data-cycle-slides='&gt; li' data-cycle-speed='600' data-cycle-timeout='5000'>
       <?php query_posts('post_type=CDPSlides&showposts=4'); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <li>
-        <a href="<?php the_field('slide_link'); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/haiyan.jpg">
+        <a href='<?php the_permalink(); ?>'>
+          <img src='<?php echo get_template_directory_uri(); ?>/assets/img/hero/haiyan.jpg'>
         </a>
         <div class='caption'>
           <h1><?php the_title(); ?></h1>
-        <?php if( get_field('slide_subheading') ): ?>
-          <h4 class='sans'><?php the_field('slide_subheading'); ?></h4>
-        <?php endif; ?>
+          <h4 class='sans'>An Inside Look at the CDP Typhoon Haiyan Fund</h4>
           <ul class='hero-buttons'>
-          <?php if( get_field('issue_title') ): ?>
             <li>
-              <a href='<?php the_field('issue_link'); ?>'>
+              <a href='/issue/typhoons/'>
                 <div class='title'>Issue</div>
-                <div class='text'><?php the_field('issue_title'); ?></div>
+                <div class='text'>Typhoons</div>
               </a>
             </li>
-          <?php endif; ?> 
-          <?php if( get_field('disaster_title') ): ?> 
             <li>
-              <a href='<?php the_field('disaster_link'); ?>'>
+              <a href='/disasters/haiyan'>
                 <div class='title'>Disaster</div>
-                <div class='text'><?php the_field('disaster_title'); ?></div>
+                <div class='text'>Haiyan</div>
               </a>
             </li>
-            <?php endif; ?> 
-            <?php if( get_field('blog_name') ): ?> 
             <li>
-              <a href="<?php the_field('blog_link'); ?>">
+              <a href='/blog/an-inside-look-at-the-cdp-typhoon-haiyan-fund/'>
                 <div class='title'>Blog</div>
-                <div class='text'><?php the_field('blog_name'); ?></div>
+                <div class='text'>Regine's Blog</div>
               </a>
             </li>
-            <?php endif; ?>
           </ul>
         </div>
       </li>
@@ -66,7 +58,7 @@
           <div class="wrap">
             <div class="container">
               <ul>
-              <?php query_posts('post_type=disasters&showposts=3'); ?>
+              <?php query_posts('showposts=3&category_name=disaster-coverage'); ?>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li>
                   <?php if (has_post_thumbnail()): ?>
@@ -108,10 +100,10 @@
             <li>
             <?php if (has_post_thumbnail()): ?>
               <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
-              <a href="<?php the_field('partner_link'); ?>" style="background-image:url(<?php echo $src[0]; ?>)">
+              <a href="<?php the_permalink(); ?>" style="background-image:url(<?php echo $src[0]; ?>)">
               </a>
             <?php else: ?>
-              <a href="<?php the_field('partner_link'); ?>" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/disasters/placeholder.png)">
+              <a href="<?php the_permalink(); ?>" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/disasters/placeholder.png)">
                 <div class="caption"><?php the_title(); ?></div>
               </a>
 						<?php endif; ?>
@@ -137,7 +129,7 @@
               <div class="meta">
                 <?php the_author_posts_link(); ?>
                 |
-                <time><?php the_date(); ?></time>
+                <time>October 13, 2013</time>
               </div>
               <p><?php the_excerpt(); ?></p>
             </div>
@@ -159,14 +151,10 @@
         <div class="large-8 offset-2 columns">
           <div class="news-listing">
             <ul>
-              <?php query_posts('post_type=medialinks&showposts=3'); ?>
-              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <li>
-                <h3><a href="the_field('article_link');"><?php the_title(); ?></a></h3>
-                <time class="meta"><?php the_date(); ?></time>
-              </li>
-              <?php endwhile; endif; ?>
-              <?php wp_reset_query(); ?>  
+                <h3><a href="http://www.huffingtonpost.com/lori-j-bertman/caution-you-dont-want-to_b_4318305.html">Huffington Post: Caution! You Don’t Want to End Up in Disaster Giving Hall of Shame</a></h3>
+                <time class="meta">Nov. 21, 2013</time>
+              </li>    
             </ul>
           </div>
         </div>

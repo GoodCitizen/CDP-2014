@@ -12,10 +12,10 @@
  */
 function roots_scripts() {
   wp_enqueue_style('roots_fontawesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', false);
-  wp_enqueue_style('roots_fonts', 'http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700|Open+Sans:300,400,700,300italic,400italic,700italic', false);
-  // wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '0c701354c778198d476f69ed44a6fabb');
-  wp_enqueue_style('roots_cauley', get_template_directory_uri() . '/assets/css/cauley.min.css', false, '5194de6d408556c78af04ae2306903fe');
+  wp_enqueue_style('roots_fonts', 'http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100', false);
+  // wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'a433583fca3e7169371020bffccde1b2');
   wp_enqueue_style('roots_peele', get_template_directory_uri() . '/assets/css/peele.min.css', false, '5194de6d408556c78af04ae2306903fe');
+  wp_enqueue_style('roots_cauley', get_template_directory_uri() . '/assets/css/cauley.min.css', false, '5194de6d408556c78af04ae2306903fe');
 
   // jQuery is loaded using the same method from HTML5 Boilerplate:
   // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
