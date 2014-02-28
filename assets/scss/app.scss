@@ -57,7 +57,12 @@ body { }
 /* ==========================================================================
    Content
    ========================================================================== */
-
+.slide-bg{
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  background-size: cover !important;
+}
 .content { }
 .disaster-dashboard{
   h1{
@@ -127,7 +132,27 @@ body { }
 .the-tweets ul li a:first-child{
   display: none;
 }
-
+.newsletter-signup{
+  margin-bottom: 30px;
+}
+.form-header{
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+}
+.footer-input{
+  background: rgba(255,255,255,0.3) !important;
+  padding: 25px !important;
+}
+.footer-btn{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 100%;
+  background: #72343a;
+  &:hover{
+    background: rgba(255,255,255,0.6);
+  };
+}
 
 
 /* ==========================================================================

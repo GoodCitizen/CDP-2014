@@ -13,7 +13,7 @@ function create_cdp_slides_post() {
       ),
     'public' => true,
     'has_archive' => true,
-    'supports' => array('title', 'thumbnail', 'custom-fields'),
+    'supports' => array('title', 'custom-fields'),
     'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
     )
   );

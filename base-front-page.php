@@ -14,9 +14,10 @@
     <ul class="cycle-slideshow" data-cycle-next=".arrow.right" data-cycle-pause-on-hover="false" data-cycle-prev=".arrow.left" data-cycle-slides="&gt; li" data-cycle-speed="600" data-cycle-timeout="5000">
       <?php query_posts('post_type=CDPSlides&showposts=4'); ?>
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <?php if( get_field('slide_image') ): ?>
       <li>
         <a href="<?php the_field('slide_link'); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/haiyan.jpg">
+          <img src="<?php the_field('slide_image'); ?>">
         </a>
         <div class='caption'>
           <h1><?php the_title(); ?></h1>
@@ -51,6 +52,7 @@
           </ul>
         </div>
       </li>
+      <?php endif; ?>
       <?php endwhile; endif; ?>
       <?php wp_reset_query(); ?>
     </ul>
