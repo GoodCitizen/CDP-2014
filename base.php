@@ -9,20 +9,21 @@
 
   <?php get_template_part('templates/header-top-navbar'); ?>
 
-    <div class="content-detail container">
-      <div class="row" role="document">
+
+      <div class="body-wrap">
+      <div class="container">
+
+    <div class="row" role="document">
+      <main class="main <?php echo roots_main_class(); ?>" role="main">
+        <?php include roots_template_path(); ?>
+      </main><!-- /.main -->
       <?php if (roots_display_sidebar()) : ?>
         <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
           <?php include roots_sidebar_path(); ?>
-        </aside> <!-- /.sidebar.<?php echo roots_sidebar_class(); ?> -->
+        </aside><!-- /.sidebar -->
       <?php endif; ?>
-        <main class="main <?php echo roots_main_class(); ?>" role="main">
-          <div class="content-area">
-            <?php include roots_template_path(); ?>
-          </div> <!-- /.content-area -->
-        </main> <!-- /.main.<?php echo roots_main_class(); ?> -->
-      </div> <!-- /.row -->
-    </div> <!-- /.content-detail.container -->
+    </div><!-- /.content -->
+  </div><!-- /.wrap -->
 
   <?php get_template_part('templates/footer'); ?>
 
