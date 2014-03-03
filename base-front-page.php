@@ -8,7 +8,7 @@
   <![endif]-->
 
   <?php get_template_part('templates/header-top-navbar'); ?>
-  
+
 
   <section class="hero">
     <ul class="cycle-slideshow" data-cycle-next=".arrow.right" data-cycle-pause-on-hover="false" data-cycle-prev=".arrow.left" data-cycle-slides="&gt; li" data-cycle-speed="600" data-cycle-timeout="5000">
@@ -32,16 +32,16 @@
                 <div class='text'><?php the_field('issue_title'); ?></div>
               </a>
             </li>
-          <?php endif; ?> 
-          <?php if( get_field('disaster_title') ): ?> 
+          <?php endif; ?>
+          <?php if( get_field('disaster_title') ): ?>
             <li>
               <a href='<?php the_field('disaster_link'); ?>'>
                 <div class='title'>Disaster</div>
                 <div class='text'><?php the_field('disaster_title'); ?></div>
               </a>
             </li>
-            <?php endif; ?> 
-            <?php if( get_field('blog_name') ): ?> 
+            <?php endif; ?>
+            <?php if( get_field('blog_name') ): ?>
             <li>
               <a href="<?php the_field('blog_link'); ?>">
                 <div class='title'>Blog</div>
@@ -57,13 +57,13 @@
       <?php wp_reset_query(); ?>
     </ul>
   </section>
-     
+
   <div class="container home">
     <div class="row">
-     
+
       <div class="disaster-dashboard component">
         <h1>Disaster Dashboard</h1>
-        <h2>Get the facts on currently unfolding disasters</h2>
+        <h2>Get the facts and take action</h2>
         <div class="horizontal-image-slider">
           <div class="wrap">
             <div class="container">
@@ -72,26 +72,26 @@
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li>
                   <?php if (has_post_thumbnail()): ?>
-                    
+
                   <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' ); ?>
                   <a href="<?php the_permalink(); ?>" style="background-image:url(<?php echo $src[0]; ?>)">
                     <div class="caption"><?php the_title(); ?></div>
                   </a>
                   <?php else: ?>
-                    
+
                   <a href="<?php the_permalink(); ?>" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/disasters/fire.png)">
                     <div class="caption"><?php the_title(); ?></div>
                   </a>
-                  
+
     							<?php endif; ?>
        					  <?php endwhile; ?>
        					  <?php endif; ?>
                   <?php wp_reset_query(); ?>
-                  
+
                 </li>
                 <li>
-                  <a href="/disasters">
-                    <div class="caption">Disaster Archive</div>
+                  <a href="<?php echo home_url(); ?>/disasters" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/disasters/fire.png);">
+                    <div class="caption">Past Disasters</div>
                   </a>
                 </li>
               </ul>
@@ -123,7 +123,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div class="news-room component">
         <h1><strong>News and Insights from CDP</strong></h1>
         <h2>expert insights</h2>
@@ -153,7 +153,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="media-room component">
         <div class="large-12 columns">
           <h1>The <strong>Media Room</strong></h1>
@@ -168,16 +168,15 @@
                 <time class="meta"><?php the_date(); ?></time>
               </li>
               <?php endwhile; endif; ?>
-              <?php wp_reset_query(); ?>  
+              <?php wp_reset_query(); ?>
             </ul>
           </div>
         </div>
       </div>
-     
+
     </div> <!-- row -->
   </div><!-- container home -->
 
   <?php get_template_part('templates/footer'); ?>
-
 </body>
 </html>

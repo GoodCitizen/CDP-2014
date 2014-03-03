@@ -51,9 +51,20 @@ body { }
    ========================================================================== */
 
 .banner { }
-
-
-
+.top-bar-section li:not(.has-form) a:not(.button) {
+padding: 0 15px;
+line-height: 45px;
+background: #fff !important;
+}
+.top-bar-section ul li>a{
+  font-size: 16px;
+}
+.top-bar-section .dropdown li a{
+  color: rgb(153, 153, 153) !important;
+}
+.top-bar-section ul li:hover>a{
+  color: rgb(153, 153, 153) !important;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
@@ -135,9 +146,10 @@ body { }
 .newsletter-signup{
   margin-bottom: 30px;
 }
-.form-header{
+.footer-header{
   color: rgba(255,255,255,0.6);
   text-transform: uppercase;
+  font-size: 24px;
 }
 .footer-input{
   background: rgba(255,255,255,0.3) !important;
@@ -170,5 +182,3 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-
