@@ -45,4 +45,10 @@
   </div>
 </footer>
 
+<a class="exit-off-canvas"></a>
+
+</div>
+</div>
+
 <?php wp_footer(); ?>
+<script>$(document).foundation();</script>

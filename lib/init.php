@@ -9,6 +9,10 @@ function roots_setup() {
   // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
   register_nav_menus(array(
     'primary_navigation' => __('Primary Navigation', 'roots'),
+    'disaster_navigation' => __('Disaster Navigation', 'roots'),
+    'services_navigation' => __('Services Navigation', 'roots'),
+    'learning_navigation' => __('Learning Center Navigation', 'roots'),
+    'mobile_navigation' => __('Mobile Navigation', 'roots'),
   ));
 
   // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)

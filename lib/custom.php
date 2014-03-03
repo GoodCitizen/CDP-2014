@@ -4,6 +4,8 @@
    Custom Post Types mostly
  */
 
+ show_admin_bar(false);
+
 function create_cdp_slides_post() {
   register_post_type( 'CDPSlides',
     array(
@@ -22,7 +24,7 @@ add_action( 'init', 'create_cdp_slides_post' );
 
 
 function cptui_register_my_cpt_disasters() {
-  register_post_type('disasters', 
+  register_post_type('disasters',
     array(
       'label' => 'Disasters',
       'description' => '',
@@ -32,11 +34,11 @@ function cptui_register_my_cpt_disasters() {
       'capability_type' => 'post',
       'map_meta_cap' => true,
       'hierarchical' => true,
-      'rewrite' => 
+      'rewrite' =>
         array('slug' => 'disasters', 'with_front' => true),
       'query_var' => true,
       'has_archive' => true,
-      'supports' => 
+      'supports' =>
         array('title','editor','revisions','thumbnail','page-attributes'),
       'labels' => array (
         'name' => 'Disasters',
@@ -54,8 +56,8 @@ function cptui_register_my_cpt_disasters() {
         'not_found_in_trash' => 'No Disasters Found in Trash',
         'parent' => 'Parent Disaster',
       )
-    ) 
-  ); 
+    )
+  );
 }
 add_action('init', 'cptui_register_my_cpt_disasters');
 
@@ -90,17 +92,17 @@ function cptui_register_my_cpt_news() {
         'not_found_in_trash' => 'No News Found in Trash',
         'parent' => 'Parent News',
       )
-    )  
-  ); 
+    )
+  );
 }
 add_action('init', 'cptui_register_my_cpt_news');
 
 function cptui_register_my_taxes_disasters_news() {
-  register_taxonomy( 
+  register_taxonomy(
     'disasters-news',array (
       0 => 'news',
     ),
-    array( 
+    array(
       'hierarchical' => true,
 	    'label' => 'Disasters',
 	    'show_ui' => true,
@@ -120,17 +122,17 @@ function cptui_register_my_taxes_disasters_news() {
         'add_or_remove_items' => '',
         'choose_from_most_used' => '',
       )
-    ) 
-  ); 
+    )
+  );
 }
 add_action('init', 'cptui_register_my_taxes_disasters_news');
 
 function cptui_register_my_taxes_disaster_categories() {
-  register_taxonomy( 
+  register_taxonomy(
     'disaster_categories',array (
       0 => 'disasters',
     ),
-    array( 
+    array(
       'hierarchical' => true,
 	    'label' => 'Disaster Categories',
 	    'show_ui' => true,
@@ -150,8 +152,8 @@ function cptui_register_my_taxes_disaster_categories() {
         'add_or_remove_items' => '',
         'choose_from_most_used' => '',
       )
-    ) 
-  ); 
+    )
+  );
 }
 add_action('init', 'cptui_register_my_taxes_disaster_categories');
 

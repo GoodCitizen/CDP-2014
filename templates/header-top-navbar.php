@@ -1,21 +1,22 @@
-<!--
-<header class="banner" role="banner">
-  <nav class="top-bar hide-for-small">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="<?php echo home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
-      </li>
-    </ul>
-    <section class="top-bar-section">
-       <?php
-          if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => ''));
-          endif;
-        ?>
-    </section>
-  </nav>
-</header>
--->
+<div class="off-canvas-wrap">
+  <div class="inner-wrap">
+    <nav class="tab-bar show-for-small-only">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon"><span></span></a>
+      </section>
+      <section class="right tab-bar-section">
+        <h1 class="title">CDP</h1>
+      </section>
+    </nav>
+
+    <aside class="left-off-canvas-menu">
+      <?php
+        if (has_nav_menu('mobile_navigation')) :
+          wp_nav_menu(array('theme_location' => 'mobile_navigation', 'menu_class' => 'off-canvas-list'));
+        endif;
+      ?>
+    </aside>
+
 <header>
   <div class="container">
     <div class="row">
@@ -49,13 +50,12 @@
           </div>
         </div>
         <div class="large-8 columns">
-          <div class="secondary-nav">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/contact">Contact</a></li>
-            </ul>
+          <div class="top-bar-section secondary-nav">
+            <?php
+               if (has_nav_menu('primary_navigation')) :
+                 wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'left'));
+               endif;
+             ?>
           </div>
           <form role="search" method="get" action="<?php echo home_url('/'); ?>">
                 <div class="search">
@@ -64,45 +64,21 @@
               </form>
             </div>
           </div>
-          <div class='large-12 columns'>
-            <div class='main-nav'>
+          <div class="large-12 columns">
+            <div class="main-nav hide-for-small-only">
               <ul>
                 <li data-name='When' href=''>
-                  <a href='/when-to-give'>
+                  <a href="/when-to-give">
                     <strong>Disasters</strong>
                   </a>
-                  <ul class='mega-menu'>
-                    <li class='inner-wrap'>
-                      <div class='triple-drop'>
-                        <ul>
-                          <li>
-                            <a href="/disasters">Disasters</a>
-                            <ul>
-                              <li>
-                                <a href="/disasters/ndia-cyclone-phalin">India: Cyclone Phalin</a>
-                                <ul>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Background</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#facts-stats">Facts &amp; Stats</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#cdp-insights">CDP Insights</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Donors</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">NGO Reponse</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Take Action</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Learn More</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#space">Space</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="/disasters/olorodo-floods-2013">Colorado Floods 2013</a></li>
-                              <li><a href="/disasters/estern-wildfires-2013">Western Wildfires 2013</a></li>
-                              <li><a href="/disasters/ali">Mali</a></li>
-                              <li><a href="/disasters/urricane-sandy">Hurricane Sandy</a></li>
-                              <li><a href="/disasters/ahel-food-crisis">Sahel Food Crisis</a></li>
-                              <li><a href="/disasters/yria-crisis">Syria Crisis</a></li>
-                            </ul>
-                            <li><a href="/issues">Issues</a></li>
-                            <li><a href="/responses">Response</a></li>
-                            <li><a href="/supporters">Supporters</a></li>
-                          </li>
-                        </ul>
+                  <ul class="mega-menu">
+                    <li class="inner-wrap">
+                      <div class="triple-drop">
+                        <?php
+                           if (has_nav_menu('disaster_navigation')) :
+                             wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
+                           endif;
+                         ?>
                       </div>
                     </li>
                   </ul>
@@ -114,35 +90,11 @@
                   <ul class='mega-menu'>
                     <li class='inner-wrap'>
                       <div class='triple-drop'>
-                        <ul>
-                          <li>
-                            <a href="/disasters">Disasters</a>
-                            <ul>
-                              <li>
-                                <a href="/disasters/ndia-cyclone-phalin">India: Cyclone Phalin</a>
-                                <ul>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Background</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#facts-stats">Facts &amp; Stats</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#cdp-insights">CDP Insights</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Donors</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">NGO Reponse</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Take Action</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#background">Learn More</a></li>
-                                  <li><a href="/disasters/ndia-cyclone-phalin#space">Space</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="/disasters/olorodo-floods-2013">Colorado Floods 2013</a></li>
-                              <li><a href="/disasters/estern-wildfires-2013">Western Wildfires 2013</a></li>
-                              <li><a href="/disasters/ali">Mali</a></li>
-                              <li><a href="/disasters/urricane-sandy">Hurricane Sandy</a></li>
-                              <li><a href="/disasters/ahel-food-crisis">Sahel Food Crisis</a></li>
-                              <li><a href="/disasters/yria-crisis">Syria Crisis</a></li>
-                            </ul>
-                            <li><a href="/issues">Issues</a></li>
-                            <li><a href="/responses">Response</a></li>
-                            <li><a href="/supporters">Supporters</a></li>
-                          </li>
-                        </ul>
+                        <?php
+                           if (has_nav_menu('services_navigation')) :
+                             wp_nav_menu(array('theme_location' => 'services_navigation', 'menu_class' => ''));
+                           endif;
+                         ?>
                       </div>
                     </li>
                   </ul>
@@ -154,23 +106,7 @@
                   <ul class='mega-menu'>
                     <li class='inner-wrap'>
                       <div class='triple-drop'>
-                        <ul>
-                          <li>
-                            <a href="#">Learning Center</a>
-                            <ul>
-                              <li>
-                                <a href="#">Principles for Disaster Philanthropists</a>
-                                <a href="#">Events</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a href="#">Custom Approaches</a>
-                          </li>
-                          <li>
-                            <a href="#">Donor Collaboration</a>
-                          </li>
-                        </ul>
+
                       </div>
                     </li>
                   </ul>

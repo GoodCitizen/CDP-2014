@@ -6,18 +6,7 @@
       <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'roots'); ?>
     </div>
   <![endif]-->
-    <div class="off-canvas-wrap">
-      <div class="inner-wrap">
 
-        <a class="left-off-canvas-toggle" >Menu</a>
-
-        <!-- Off Canvas Menu -->
-        <aside class="left-off-canvas-menu">
-            <!-- whatever you want goes here -->
-            <ul>
-              <li><a href="#">Item 1</a></li>
-            </ul>
-        </aside>
   <?php get_template_part('templates/header-top-navbar'); ?>
 
 
@@ -189,11 +178,5 @@
   </div><!-- container home -->
 
   <?php get_template_part('templates/footer'); ?>
-
-  <a class="exit-off-canvas"></a>
-
-  </div>
-</div>
-
 </body>
 </html>
