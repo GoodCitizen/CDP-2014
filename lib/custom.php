@@ -4,7 +4,7 @@
    Custom Post Types mostly
  */
 
- show_admin_bar(false);
+ // show_admin_bar(false);
 
 function create_cdp_slides_post() {
   register_post_type( 'CDPSlides',
