@@ -40,6 +40,8 @@ function cptui_register_my_cpt_disasters() {
       'has_archive' => true,
       'supports' =>
         array('title','editor','revisions','thumbnail','page-attributes'),
+      'taxonomies' =>
+        array('category', 'post_tag'),
       'labels' => array (
         'name' => 'Disasters',
         'singular_name' => 'Disaster',
@@ -75,7 +77,10 @@ function cptui_register_my_cpt_news() {
       'rewrite' => array('slug' => 'news', 'with_front' => true),
       'query_var' => true,
       'has_archive' => true,
-      'supports' => array('title','editor','revisions','thumbnail','author','page-attributes'),
+      'supports' =>
+        array('title','editor','revisions','thumbnail','author','page-attributes'),
+      'taxonomies' =>
+        array('category', 'post_tag'),
       'labels' => array (
         'name' => 'News',
         'singular_name' => 'News',
