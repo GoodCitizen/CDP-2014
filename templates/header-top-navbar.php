@@ -32,11 +32,6 @@
           <div class="social-nav">
             <ul>
               <li>
-                <a href="http://youtube.com" target="_blank">
-                  <i class="fa fa-youtube"></i>
-                </a>
-              </li>
-              <li>
                 <a href="https://www.facebook.com/funds4disaster" target="_blank">
                   <i class='fa fa-facebook'></i>
                 </a>
