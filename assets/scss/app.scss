@@ -65,6 +65,30 @@ background: #fff !important;
 .top-bar-section ul li:hover>a{
   color: rgb(153, 153, 153) !important;
 }
+
+.main-menu-stack{
+  display: inline-block !important;
+  max-width: 20%;
+  margin-right: 10px;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+}
+
+.accordion dd>.disasters-link {
+  background: #bdac85;
+  color: #fff;
+  padding: 1rem;
+}
+.accordion dd>.services-link {
+  background: #9c422b;
+  color: #fff;
+  padding: 1rem;
+}
+.accordion dd>.learning-link {
+  background: #3986a8;
+  color: #fff;
+  padding: 1rem;
+}
 /* ==========================================================================
    Content
    ========================================================================== */

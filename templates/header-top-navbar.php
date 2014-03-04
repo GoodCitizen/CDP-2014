@@ -66,52 +66,47 @@
           </div>
           <div class="large-12 columns">
             <div class="main-nav hide-for-small-only">
-              <ul>
-                <li data-name='When' href=''>
-                  <a href="/when-to-give">
-                    <strong>Disasters</strong>
+              <dl class="accordion" data-accordion>
+                <dd>
+                  <a class="main-menu-stack disasters-link" href="#panel1">
+                    Disasters
                   </a>
-                  <ul class="mega-menu">
-                    <li class="inner-wrap">
-                      <div class="triple-drop">
-                        <?php
-                           if (has_nav_menu('disaster_navigation')) :
-                             wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
-                           endif;
-                         ?>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li data-name='Where' href=''>
-                  <a href='/services'>
-                    <strong>Services</strong>
+                  <a class="main-menu-stack services-link" href="#panel2">
+                    Services
                   </a>
-                  <ul class='mega-menu'>
-                    <li class='inner-wrap'>
-                      <div class='triple-drop'>
-                        <?php
-                           if (has_nav_menu('services_navigation')) :
-                             wp_nav_menu(array('theme_location' => 'services_navigation', 'menu_class' => ''));
-                           endif;
-                         ?>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li data-name='How' href=''>
-                  <a href='/learning-center'>
-                    <strong>Learning Center</strong>
+                  <a class="main-menu-stack learning-link" href="#panel3">
+                    Learning Center
                   </a>
-                  <ul class='mega-menu'>
-                    <li class='inner-wrap'>
-                      <div class='triple-drop'>
 
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                  <div id="panel1" class="content">
+                    <?php
+                      if (has_nav_menu('disaster_navigation')) :
+                        wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
+                      endif;
+                    ?>
+                  </div>
+                </dd>
+                <dd>
+                  <div id="panel2" class="content">
+                    <?php
+                      if (has_nav_menu('services_navigation')) :
+                        wp_nav_menu(array('theme_location' => 'services_navigation', 'menu_class' => ''));
+                      endif;
+                    ?>
+                  </div>
+                </dd>
+                <dd>
+                  <div id="panel3" class="content">
+                    <?php
+                      if (has_nav_menu('learning_navigation')) :
+                        wp_nav_menu(array('theme_location' => 'learning_navigation', 'menu_class' => ''));
+                      endif;
+                    ?>
+                  </div>
+                </dd>
+              </dl>
+
+
             </div>
           </div>
         </div>
