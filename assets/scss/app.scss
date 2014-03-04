@@ -35,6 +35,8 @@
   overflow: auto;
 }
 
+
+
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -46,27 +48,28 @@ body { }
 }
 
 
+
 /* ==========================================================================
    Header
    ========================================================================== */
 
 .banner { }
 .top-bar-section li:not(.has-form) a:not(.button) {
-padding: 0 15px;
-line-height: 45px;
-background: #fff !important;
+  padding: 0 15px;
+  line-height: 45px;
+  background: #fff !important;
 }
-.top-bar-section ul li>a{
+.top-bar-section ul li>a {
   font-size: 16px;
 }
-.top-bar-section .dropdown li a{
+.top-bar-section .dropdown li a {
   color: rgb(153, 153, 153) !important;
 }
-.top-bar-section ul li:hover>a{
+.top-bar-section ul li:hover>a {
   color: rgb(153, 153, 153) !important;
 }
 
-.main-menu-stack{
+.main-menu-stack {
   display: inline-block !important;
   max-width: 20%;
   margin-right: 10px;
@@ -89,51 +92,59 @@ background: #fff !important;
   color: #fff;
   padding: 1rem;
 }
+
+
+
 /* ==========================================================================
    Content
    ========================================================================== */
-.slide-bg{
+
+.content { }
+.slide-bg {
   display: inline-block;
   height: 400px;
   width: 100%;
   background-size: cover !important;
 }
-.content { }
-.disaster-dashboard{
-  h1{
+
+.disaster-dashboard {
+  h1 {
     font-weight: 700;
   }
 }
 .horizontal-image-slider ul li a .caption {
-  bottom: -100px;
+  padding: 20px 15px;
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  bottom: -90px;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  background-color: rgba(57, 134, 168, 0.8);
   -webkit-transition: bottom 300ms;
   -moz-transition: bottom 300ms;
   -o-transition: bottom 300ms;
   transition: bottom 300ms;
-  padding: 20px 15px;
-  background-color: rgba(57, 134, 168, 0.8);
-  height: 160px;
-  width: 100%;
-  color: white;
-  text-align: center;
-  position: absolute;
 }
-.news-room{
-  h3{
+.news-room {
+  h3 {
     font-weight: 300;
   }
 }
-.news-listing{
-  h3{
+.news-listing {
+  h3 {
     font-weight: 300;
   }
 }
+
+
+
 /* ==========================================================================
    Primary Content
    ========================================================================== */
 
 .main { }
-
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
 
@@ -164,30 +175,30 @@ background: #fff !important;
    ========================================================================== */
 
 .content-info { }
-.the-tweets ul li a:first-child{
+.the-tweets ul li a:first-child {
   display: none;
 }
-.newsletter-signup{
+.newsletter-signup {
   margin-bottom: 30px;
 }
-.footer-header{
+.footer-header {
   color: rgba(255,255,255,0.6);
   text-transform: uppercase;
   font-size: 24px;
 }
-.footer-input{
+.footer-input {
   background: rgba(255,255,255,0.3) !important;
   padding: 25px !important;
 }
-.footer-btn{
+.footer-btn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   width: 100%;
   background: #72343a;
-  &:hover{
+  &:hover {
     background: rgba(255,255,255,0.6);
-  };
+  }
 }
 
 
