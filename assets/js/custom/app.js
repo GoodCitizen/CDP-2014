@@ -1,3 +1,11 @@
+$(function() {
+  $(".main-menu-stack").on('click', function(event){
+    $('.linkactive').not($(this)).removeClass('linkactive');
+    $(this).toggleClass('linkactive');
+         // event.stopPropagation();
+  });
+});
+
 /*!
 * jQuery Cycle2; build: v20131005
 * http://jquery.malsup.com/cycle2/
@@ -40,7 +48,7 @@ $('.hero .caption h1').html(function(i, html){
 *  Coded by Jason Mayes 2013. A present to all the developers out there.
 *  www.jasonmayes.com
 *  Please keep this disclaimer with my code if you use it. Thanks. :-)
-*  Got feedback or questions, ask here: 
+*  Got feedback or questions, ask here:
 *  http://www.jasonmayes.com/projects/twitterApi/
 *  Updates will be posted to this site.
 *********************************************************************/

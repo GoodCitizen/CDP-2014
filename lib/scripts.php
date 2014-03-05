@@ -13,7 +13,7 @@
 function roots_scripts() {
   wp_enqueue_style('roots_fontawesome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css', false);
   wp_enqueue_style('roots_fonts', 'http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100', false);
-  // wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '3517672a481128c2d5985c8a27d4b4d7');
+  // wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '810a2929e647d4cc8acc347ab2621b2d');
   wp_enqueue_style('roots_peele', get_template_directory_uri() . '/assets/css/peele.min.css', false, '5194de6d408556c78af04ae2306903fe');
   wp_enqueue_style('roots_cauley', get_template_directory_uri() . '/assets/css/cauley.min.css', false, '5194de6d408556c78af04ae2306903fe');
 
