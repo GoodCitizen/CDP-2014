@@ -3,6 +3,7 @@
 @import "../_util";
 
 .hero {
+  @extend .gold-top-border;
   @extend .gold-bottom-border;
   height: 400px;
   overflow: hidden;

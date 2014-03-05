@@ -73,7 +73,7 @@
                     Learning Center
                   </a>
 
-                  <div id="panel1" class="content">
+                  <div id="panel1" class="content disasters-panel">
                     <?php
                       if (has_nav_menu('disaster_navigation')) :
                         wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
@@ -82,7 +82,7 @@
                   </div>
                 </dd>
                 <dd>
-                  <div id="panel2" class="content">
+                  <div id="panel2" class="content services-panel">
                     <?php
                       if (has_nav_menu('services_navigation')) :
                         wp_nav_menu(array('theme_location' => 'services_navigation', 'menu_class' => ''));
@@ -91,7 +91,7 @@
                   </div>
                 </dd>
                 <dd>
-                  <div id="panel3" class="content">
+                  <div id="panel3" class="content learning-panel">
                     <?php
                       if (has_nav_menu('learning_navigation')) :
                         wp_nav_menu(array('theme_location' => 'learning_navigation', 'menu_class' => ''));

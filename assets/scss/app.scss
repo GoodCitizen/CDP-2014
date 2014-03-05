@@ -48,7 +48,6 @@ body { }
 }
 
 
-
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -71,32 +70,76 @@ body { }
 .top-bar-section ul li:hover>a {
   color: rgb(153, 153, 153) !important;
 }
-
-.main-menu-stack {
-  display: inline-block !important;
+.main-nav{
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+.accordion{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+.accordion dd>.main-menu-stack {
+  display: inline-block;
   max-width: 20%;
   margin-right: 10px;
+  color: #fff;
   font-family: "Roboto Slab", serif;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 21px;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.accordion dd>.main-menu-stack.linkactive{
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.accordion dd.active>.disasters-link{
+  background: rgba(189, 172, 133, 1);
+}
+.accordion dd.active>.services-link {
+  background: rgba(156, 66, 43, 1);
+}
+.accordion dd.active>.learning-link {
+  background: rgba(57, 134, 168, 1);
 }
 
 .accordion dd>.disasters-link {
-  background: #bdac85;
-  color: #fff;
-  padding: 1rem;
+  background: rgba(189, 172, 133, 1);
+  &:hover{
+    background: rgba(189, 172, 133, .8);
+  }
 }
 .accordion dd>.services-link {
-  background: #9c422b;
-  color: #fff;
-  padding: 1rem;
+  background: rgba(156, 66, 43, 1);
+  &:hover{
+    background: rgba(156, 66, 43, .8);
+  }
 }
 .accordion dd>.learning-link {
-  background: #3986a8;
-  color: #fff;
-  padding: 1rem;
+  background: rgba(57, 134, 168, 1);
+  &:hover{
+    background: rgba(57, 134, 168, .8);
+  }
+}
+.accordion .content.disasters-panel.active{
+  background: rgba(189, 172, 133, 1);
 }
 
-
+.accordion .content.services-panel.active{
+  background: rgba(156, 66, 43, 1);
+}
+.accordion .content.learning-panel.active{
+  background: rgba(57, 134, 168, 1);
+}
 
 /* ==========================================================================
    Content
