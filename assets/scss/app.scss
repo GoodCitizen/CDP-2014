@@ -140,7 +140,21 @@ body { }
 .accordion .content.learning-panel.active{
   background: rgba(57, 134, 168, 1);
 }
+.cdp-nav{
+  list-style: none;
+  li a{
+    color: #fff;
+  }
+}
+.has-sub{
 
+}
+.the-sub{
+  display: none;
+  .active{
+    display: block;
+  }
+}
 /* ==========================================================================
    Content
    ========================================================================== */

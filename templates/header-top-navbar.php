@@ -74,18 +74,40 @@
                   </a>
 
                   <div id="panel1" class="content disasters-panel">
+                    <!--
                     <?php
                       if (has_nav_menu('disaster_navigation')) :
-                        wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
+                        wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => 'cdp-nav'));
                       endif;
                     ?>
+                  -->
+                  <dl class="tabs vertical" data-tab>
+  <dd class="active"><a href="#panel1a">Tab 1</a></dd>
+  <dd><a href="#panel2a">Tab 2</a></dd>
+  <dd><a href="#panel3a">Tab 3</a></dd>
+  <dd><a href="#panel4a">Tab 4</a></dd>
+</dl>
+<div class="tabs-content vertical">
+  <div class="content active" id="panel1a">
+    <p>Panel 1 content goes here.</p>
+  </div>
+  <div class="content" id="panel2a">
+    <p>Panel 2 content goes here.</p>
+  </div>
+  <div class="content" id="panel3a">
+    <p>Panel 3 content goes here.</p>
+  </div>
+  <div class="content" id="panel4a">
+    <p>Panel 4 content goes here.</p>
+  </div>
+</div>
                   </div>
                 </dd>
                 <dd>
                   <div id="panel2" class="content services-panel">
                     <?php
                       if (has_nav_menu('services_navigation')) :
-                        wp_nav_menu(array('theme_location' => 'services_navigation', 'menu_class' => ''));
+                        wp_nav_menu(array('theme_location' => 'services_navigation', 'menu_class' => 'cdp-nav'));
                       endif;
                     ?>
                   </div>
@@ -94,7 +116,7 @@
                   <div id="panel3" class="content learning-panel">
                     <?php
                       if (has_nav_menu('learning_navigation')) :
-                        wp_nav_menu(array('theme_location' => 'learning_navigation', 'menu_class' => ''));
+                        wp_nav_menu(array('theme_location' => 'learning_navigation', 'menu_class' => 'cdp-nav'));
                       endif;
                     ?>
                   </div>
