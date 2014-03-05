@@ -2,7 +2,9 @@
 @import "../colors";
 
 .social-nav {
+  margin: 10px 15px 0 0;
   ul {
+    margin: 0;
     float: right;
     li {
       list-style: none;
@@ -11,7 +13,7 @@
         color: $light-grey;
         font-size: 1.5em;
         display: inline-block;
-        margin: 50px 0 0 10px;
+        margin: 0 0 0 10px;
         &:hover {
           color: $dark-grey;
         }
