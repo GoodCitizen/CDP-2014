@@ -30,12 +30,13 @@
         ul.hero-buttons {
           padding: 0;
           clear: both;
+          text-align: right;
           li {
             list-style: none;
             display: inline-block;
             a {
               display: inline-block;
-              background-color: rgba($blue, 0.9);
+              background-color: $blue;
               padding: 3px 7px;
               /* @include transition(background-color, 300ms);*/
               .title {
