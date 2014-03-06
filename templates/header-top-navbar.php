@@ -143,7 +143,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content active" id="panel2a">
+                  <div class="content" id="panel2a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/">Custom Approaches - Overview</a></li>
