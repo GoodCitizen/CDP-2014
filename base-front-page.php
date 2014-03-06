@@ -62,8 +62,10 @@
     <div class="row">
 
       <div class="disaster-dashboard component">
-        <h1>Disaster Dashboard</h1>
-        <h2>Get the facts and take action</h2>
+        <header class="component-header">
+          <h1>Disaster <strong>Dashboard</strong></h1>
+          <h2>Get the facts and take action</h2>
+        </header> <!-- /.component-header -->
         <div class="horizontal-image-slider">
           <div class="wrap">
             <div class="container">
@@ -101,8 +103,10 @@
       </div>
 
       <div class="cdp-spotlight component">
-        <h1>CDP<strong>Spotlight</strong></h1>
-        <h2>highlighting donors, NGOs and leaders the the field</h2>
+        <header class="component-header">
+          <h1>CDP <strong>Spotlight</strong></h1>
+          <h2>highlighting donors, NGOs and leaders the the field</h2>
+        </header> <!-- /.component-header -->
         <div class="horizontal-image-slider logos">
           <ul>
             <?php query_posts('post_type=CDPPartners&showposts=4'); ?>
@@ -125,8 +129,10 @@
       </div>
 
       <div class="news-room component">
-        <h1><strong>News and Insights from CDP</strong></h1>
-        <h2>expert insights</h2>
+        <header class="component-header">
+          <h1><strong>News and Insights from CDP</strong></h1>
+          <h2>expert insights</h2>
+        </header> <!-- /.component-header -->
         <div class="large-2 columns side-nav">
           <?php dynamic_sidebar('sidebar-home-newsroom'); ?>
         </div>
@@ -155,9 +161,9 @@
       </div>
 
       <div class="media-room component">
-        <div class="large-12 columns">
+        <header class="component-header">
           <h1>The <strong>Media Room</strong></h1>
-        </div>
+        </header> <!-- /.component-header -->
         <div class="large-8 offset-2 columns">
           <div class="news-listing">
             <ul>
