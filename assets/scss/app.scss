@@ -208,6 +208,7 @@ p img{
 .vcard{
   border: none;
 }
+
 .social{
   list-style: none;
   float: right;
@@ -225,6 +226,7 @@ p img{
     position: relative;
   }
 }
+
 .tabs {
   margin-bottom: 1.25rem; /* to override the Foundation "margin-bottom: 0 !important" nonsense */
   border: 1px solid #ccc;
@@ -257,8 +259,9 @@ p img{
   }
 }
 
-.tabs-content {
-  border-bottom: 1px solid #ccc;
+.related-posts {
+  padding-top: 1.5rem;
+  border-top: 1px solid #ccc;
 }
 
 /* ==========================================================================
