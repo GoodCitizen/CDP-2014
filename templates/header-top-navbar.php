@@ -129,7 +129,7 @@
                 </dl>
               -->
                 <dl class="tabs vertical dl-single-friend left-menu" data-tab>
-                  <dd class="active"><a href="#panela">Services</a></dd>
+                  <dd class="active"><a href="#panel1a">Services</a></dd>
                   <dd><a href="#panel2a">Custom Approaches</a></dd>
                   <dd><a href="#panel3a">Donor Collaboration</a></dd>
                   <dd><a href="#panel4a">Community of Practice</a></dd>
@@ -155,7 +155,8 @@
                   <div class="content" id="panel3a">
                     <div class="large-12 columns center-menu">
                       <ul>
-                        <li id="menu-item-6361" class="menu-item"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/">CDP Disaster Recovery Fund - Overview</a></li>
+                        <li id="menu-item-6361" class="menu-item"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/">Donor Collaboration - Overview</a></li>
+                        <li id="menu-item-6361" class="menu-item"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/">CDP Disaster Recovery Fund</a></li>
                         <li id="menu-item-6366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6366"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/why-give-to-the-fund/">Why Give to the Fund</a></li>
                         <li id="menu-item-6365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6365"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/how-the-fund-will-be-used/">How the Fund will be Used</a></li>
                         <li id="menu-item-6367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6367"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/how-to-give-to-the-fund/">How to Give to the Fund</a></li>
