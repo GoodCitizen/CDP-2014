@@ -35,8 +35,11 @@
             ?>
              <?php while ( $rel_query->have_posts() ) : $rel_query->the_post(); ?>
                <a href="<?php the_permalink(); ?>">
-                 <h2><?php the_title(); ?></h2>
-              </a>
+                 <h2 class="h2-recent-post"><?php the_title(); ?></h2>
+               </a>
+                 <time class="published published-recent" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
+                 <p class="byline author vcard author-recent"><?php echo __('By', 'roots'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?php echo get_the_author(); ?></a></p>
+
           <?php endwhile; ?>
             </div><!-- .group -->
           <?php endif; wp_reset_query(); ?>

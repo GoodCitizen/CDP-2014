@@ -147,16 +147,83 @@ p img{
     background: rgba(57, 134, 168, .8);
   }
 }
+.accordion .content.active{
+  background: transparent;
+}
 .accordion .content.disasters-panel.active{
   background: rgba(189, 172, 133, 1);
+  height: 760px;
+  width: 100%;
 }
 
 .accordion .content.services-panel.active{
   background: rgba(156, 66, 43, 1);
+  height: 450px;
+  width: 100%;
 }
 .accordion .content.learning-panel.active{
   background: rgba(57, 134, 168, 1);
+  height: 650px;
+  width: 100%;
 }
+.list-link-title{
+  padding-bottom: 3px;
+  /* border-bottom: 1px solid #fff; */
+  margin-bottom: 5px;
+  a{
+    font-size: 20px;
+  }
+}
+.menu-header{
+  text-align: center;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.disasters-panel, .services-panel, .learning-panel{
+  a, .link{
+    color: #555555;
+    &:hover{
+      color: #fff;
+    }
+  }
+  ul{
+    list-style: none;
+
+  }
+  .tabs dd a{
+    background: transparent;
+  }
+  .tabs dd.active a{
+    background: transparent;
+  }
+  .left-menu{
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .center-menu{
+    background: rgba(255, 255, 255, 0.5);
+    ul{
+      height: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .far-right-menu{
+    background: rgba(255, 255, 255, 0.8);
+    ul{
+      height: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+.disaster-tabs{
+  background: rgba(189, 172, 133, 1) !important;
+  a{
+    background: transparent;
+  }
+}
+
 
 /* ==========================================================================
    Content
@@ -195,7 +262,15 @@ p img{
     font-weight: 300;
   }
 }
+.h2-recent-post{
+  margin-bottom: 0;
+}
+.published-recent{
 
+}
+.author-recent{
+
+}
 
 
 /* ==========================================================================
@@ -286,6 +361,14 @@ p img{
   line-height: 20px;
 }
 
+.social-buttons{
+  display: block;
+  float: right;
+  li{
+    line-height: 10px;
+    display: inline-block;
+  }
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
