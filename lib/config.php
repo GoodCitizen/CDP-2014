@@ -18,6 +18,7 @@ define('POST_EXCERPT_LENGTH', 40); // Length in words for excerpt_length filter 
  * .main classes
  */
 function roots_main_class() {
+  return false; // removes sidebar in all templates
   if (roots_display_sidebar()) {
     // Classes on pages with the sidebar
     $class = 'large-8 columns';
