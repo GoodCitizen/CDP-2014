@@ -129,29 +129,26 @@
                 </dl>
               -->
                 <dl class="tabs vertical dl-single-friend left-menu" data-tab>
+                  <dd><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a>/dd>
                   <dd class="active"><a href="#panel1a">Custom Approaches</a></dd>
                   <dd><a href="#panel2a">Donor Collaboration</a></dd>
                   <dd><a href="#panel3a">Community of Practice</a></dd>
+                  <dd><a href="#panel4a">Events</a></dd>
                 </dl>
                 <div class="tabs-content vertical">
                   <div class="content active" id="panel1a">
-                    <div class="large-6 columns center-menu">
+                    <div class="large-12 columns center-menu">
                       <ul>
-                        <li id="menu-item-6354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354 list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/">Custom Approaches</a></li>
+                        <li id="menu-item-6354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/">Custom Approaches - Overview</a></li>
                         <li id="menu-item-6354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/strategic-guidance/">Strategic One-on-One Guidance</a></li>
                         <li id="menu-item-6356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6356"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/disaster-philanthropy-hotline/">CDP Disaster Philanthropy Hotline</a></li>
                       </ul>
                     </div>
-                    <div class="large-6 columns far-right-menu">
-                      <ul>
-                        <li id="menu-item-6318" class="list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a></li>
-                      </ul>
-                    </div>
                   </div>
                   <div class="content" id="panel2a">
-                    <div class="large-6 columns center-menu">
+                    <div class="large-12 columns center-menu">
                       <ul>
-                        <li id="menu-item-6361" class="menu-item list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/">CDP Disaster Recovery Fund</a></li>
+                        <li id="menu-item-6361" class="menu-item"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/">CDP Disaster Recovery Fund - Overview</a></li>
                         <li id="menu-item-6366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6366"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/why-give-to-the-fund/">Why Give to the Fund</a></li>
                         <li id="menu-item-6365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6365"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/how-the-fund-will-be-used/">How the Fund will be Used</a></li>
                         <li id="menu-item-6367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6367"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/how-to-give-to-the-fund/">How to Give to the Fund</a></li>
@@ -160,28 +157,23 @@
                         <li id="menu-item-6364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6364"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/atc-when-disaster-strikes-fund/">ATC “When Disaster Strikes Fund”</a></li>
                       </ul>
                     </div>
-                    <div class="large-6 columns far-right-menu">
+                  </div>
+                  <div class="content" id="panel3a">
+                    <div class="large-12 columns center-menu">
                       <ul>
-                        <li id="menu-item-6318" class="list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a></li>
+                        <li id="menu-item-6360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6360"><a href="<?php echo home_url(); ?>/what-we-provide/community-of-practice/">Community of Practice - Overview</a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel3a">
-                    <div class="large-6 columns center-menu">
+                  <div class="content" id="panel4a">
+                    <div class="large-12 columns center-menu">
                       <ul>
-                        <li id="menu-item-6360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6360 list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/community-of-practice/">Community of Practice</a></li>
-                        <li id="menu-item-6357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6357"><a href="<?php echo home_url(); ?>/what-we-provide/events/">Events</a></li>
+                        <li id="menu-item-6357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6357"><a href="<?php echo home_url(); ?>/what-we-provide/events/">Events - Overview</a></li>
                         <li id="menu-item-6358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6358"><a href="<?php echo home_url(); ?>/what-we-provide/events/upcoming-events/">Upcoming Events</a></li>
                         <li id="menu-item-6359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6359"><a href="<?php echo home_url(); ?>/what-we-provide/events/other-upcoming-events/">Event Highlights</a></li>
                       </ul>
                     </div>
-                    <div class="large-6 columns far-right-menu">
-                      <ul>
-                        <li id="menu-item-6318" class="list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a></li>
-                      </ul>
-                    </div>
                   </div>
-
                 </div>
 
                 <!--
