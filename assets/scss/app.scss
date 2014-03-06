@@ -47,7 +47,9 @@ body { }
   font-weight: 700;
 }
 
-
+p img{
+  padding: 10px;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -73,6 +75,14 @@ body { }
 .top-bar-section ul li:hover>a {
   color: rgb(153, 153, 153) !important;
 }
+.top-bar-section .has-dropdown>a{
+  padding-right: 10px !important;
+  .caret{
+    display: none !important;
+    background: transparent;
+  }
+}
+
 .main-nav{
   margin-top: 10px;
   width: 100%;
@@ -200,8 +210,30 @@ body { }
 .main { }
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
-
-
+.vcard{
+  border: none;
+}
+.social{
+  list-style: none;
+  float: right;
+  line-height: 16px;
+  li{
+    background-repeat: no-repeat;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 11px;
+    height: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 16px;
+    width: auto;
+    position: relative;
+  }
+}
+.tabs dd>a{
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
 
 /* ==========================================================================
    Sidebar
@@ -221,7 +253,9 @@ body { }
 .hentry .entry-content { }
 .hentry footer { }
 
-
+.byline{
+  line-height: 20px;
+}
 
 /* ==========================================================================
    Footer
