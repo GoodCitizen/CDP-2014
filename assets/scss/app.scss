@@ -225,9 +225,35 @@ p img{
     position: relative;
   }
 }
-.tabs dd>a{
-  padding: 10px 15px;
-  margin-bottom: 20px;
+.tabs {
+  margin-bottom: 1.25rem; /* to override the Foundation "margin-bottom: 0 !important" nonsense */
+  border: 1px solid $gold;
+  border-width: 0 0 1px 0;
+  dd {
+    > a {
+      padding: 10px 15px;
+      font-size: .8rem;
+      font-weight: bold;
+      color: #aaa;
+      background: none;
+      border: 1px solid transparent;
+      border-width: 1px 1px 0 1px;
+      border-bottom: 1px solid transparent;
+      border-radius: 5px 5px 0 0;
+      &:hover {
+        background: none;
+      }
+    }
+    &.active {
+      border: 1px solid $gold;
+      border-width: 1px 1px 0 1px;
+      border-bottom: 1px solid #fff;
+      a {
+        color: $dark-grey;
+        background: none;
+      }
+    }
+  }
 }
 
 /* ==========================================================================
