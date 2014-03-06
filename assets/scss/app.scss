@@ -77,10 +77,12 @@ p img{
 }
 .top-bar-section .has-dropdown>a{
   padding-right: 10px !important;
+  .caret{
+    display: none !important;
+    background: transparent;
+  }
 }
-.caret{
-  display: none !important;
-}
+
 .main-nav{
   margin-top: 10px;
   width: 100%;
@@ -211,8 +213,23 @@ p img{
 .vcard{
   border: none;
 }
-
-
+.social{
+  list-style: none;
+  float: right;
+  line-height: 16px;
+  li{
+    background-repeat: no-repeat;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 11px;
+    height: 16px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 16px;
+    width: auto;
+    position: relative;
+  }
+}
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -231,7 +248,9 @@ p img{
 .hentry .entry-content { }
 .hentry footer { }
 
-
+.byline{
+  line-height: 20px;
+}
 
 /* ==========================================================================
    Footer
