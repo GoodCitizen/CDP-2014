@@ -129,14 +129,21 @@
                 </dl>
               -->
                 <dl class="tabs vertical dl-single-friend left-menu" data-tab>
-                  <dd><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a></dd>
-                  <dd class="active"><a href="#panel1a">Custom Approaches</a></dd>
-                  <dd><a href="#panel2a">Donor Collaboration</a></dd>
-                  <dd><a href="#panel3a">Community of Practice</a></dd>
-                  <dd><a href="#panel4a">Events</a></dd>
+                  <dd class="active"><a href="#panela">Services</a></dd>
+                  <dd><a href="#panel2a">Custom Approaches</a></dd>
+                  <dd><a href="#panel3a">Donor Collaboration</a></dd>
+                  <dd><a href="#panel4a">Community of Practice</a></dd>
+                  <dd><a href="#panel5a">Events</a></dd>
                 </dl>
                 <div class="tabs-content vertical">
                   <div class="content active" id="panel1a">
+                    <div class="large-12 columns center-menu">
+                      <ul>
+                        <li id="menu-item-6318" class="list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/">Services - Overview</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="content active" id="panel2a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/">Custom Approaches - Overview</a></li>
@@ -145,7 +152,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel2a">
+                  <div class="content" id="panel3a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6361" class="menu-item"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/disaster-recovery-fund/">CDP Disaster Recovery Fund - Overview</a></li>
@@ -158,14 +165,14 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel3a">
+                  <div class="content" id="panel4a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6360"><a href="<?php echo home_url(); ?>/what-we-provide/community-of-practice/">Community of Practice - Overview</a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel4a">
+                  <div class="content" id="panel5a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6357"><a href="<?php echo home_url(); ?>/what-we-provide/events/">Events - Overview</a></li>
