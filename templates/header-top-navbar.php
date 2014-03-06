@@ -129,7 +129,7 @@
                 </dl>
               -->
                 <dl class="tabs vertical dl-single-friend left-menu" data-tab>
-                  <dd><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a>/dd>
+                  <dd><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a></dd>
                   <dd class="active"><a href="#panel1a">Custom Approaches</a></dd>
                   <dd><a href="#panel2a">Donor Collaboration</a></dd>
                   <dd><a href="#panel3a">Community of Practice</a></dd>
