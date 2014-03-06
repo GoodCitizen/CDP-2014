@@ -227,7 +227,7 @@ p img{
 }
 .tabs {
   margin-bottom: 1.25rem; /* to override the Foundation "margin-bottom: 0 !important" nonsense */
-  border: 1px solid $gold;
+  border: 1px solid #ccc;
   border-width: 0 0 1px 0;
   dd {
     > a {
@@ -249,12 +249,16 @@ p img{
       a {
         color: $dark-grey;
         background: none;
-        border: 1px solid $gold;
+        border: 1px solid #ccc;
         border-width: 1px 1px 0 1px;
         border-bottom: 1px solid #fff;
       }
     }
   }
+}
+
+.tabs-content {
+  border-bottom: 1px solid #ccc;
 }
 
 /* ==========================================================================
