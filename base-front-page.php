@@ -28,7 +28,7 @@
           <?php if( get_field('issue_title') ): ?>
             <li>
               <a href='<?php the_field('issue_link'); ?>'>
-                <div class='title'>Issue</div>
+                <div class='title'><?php the_field('box_one_content_title'); ?></div>
                 <div class='text'><?php the_field('issue_title'); ?></div>
               </a>
             </li>
@@ -36,7 +36,7 @@
           <?php if( get_field('disaster_title') ): ?>
             <li>
               <a href='<?php the_field('disaster_link'); ?>'>
-                <div class='title'>Disaster</div>
+                <div class='title'><?php the_field('box_two_content_title'); ?></div>
                 <div class='text'><?php the_field('disaster_title'); ?></div>
               </a>
             </li>
@@ -44,7 +44,7 @@
             <?php if( get_field('blog_name') ): ?>
             <li>
               <a href="<?php the_field('blog_link'); ?>">
-                <div class='title'>Blog</div>
+                <div class='title'><?php the_field('box_three_content_title'); ?></div>
                 <div class='text'><?php the_field('blog_name'); ?></div>
               </a>
             </li>
