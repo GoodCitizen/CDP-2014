@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="large-6 columns logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo-trans-light-horizontal.png">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo-trans.png">
         <div class="large-3 columns">
           <?php dynamic_sidebar('footer-left'); ?>
         </div>
