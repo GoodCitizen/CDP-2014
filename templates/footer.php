@@ -3,10 +3,10 @@
     <div class="row">
       <div class="large-6 columns logo">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo-trans.png">
-        <div class="large-3 columns">
+        <div class="large-6 columns">
           <?php dynamic_sidebar('footer-left'); ?>
         </div>
-        <div class="large-3 columns">
+        <div class="large-6 columns">
           <?php dynamic_sidebar('footer-right'); ?>
         </div>
       </div>

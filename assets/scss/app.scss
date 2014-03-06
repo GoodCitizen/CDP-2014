@@ -374,6 +374,14 @@ p img{
    ========================================================================== */
 
 .content-info { }
+
+.footer-left,
+.footer-right {
+  h3 {
+    display: none;
+  }
+}
+
 .the-tweets ul li a:first-child {
   display: none;
 }

@@ -43,7 +43,7 @@ function roots_widgets_init() {
   register_sidebar(array(
     'name'          => __('Footer Left', 'roots'),
     'id'            => 'footer-left',
-    'before_widget' => '<section class="widget %1$s %2$s">',
+    'before_widget' => '<section class="widget %1$s %2$s footer-left">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
@@ -52,7 +52,7 @@ function roots_widgets_init() {
   register_sidebar(array(
     'name'          => __('Footer Right', 'roots'),
     'id'            => 'footer-right',
-    'before_widget' => '<section class="widget %1$s %2$s">',
+    'before_widget' => '<section class="widget %1$s %2$s footer-right">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
