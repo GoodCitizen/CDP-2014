@@ -170,7 +170,7 @@
               <?php query_posts('post_type=medialinks&showposts=3'); ?>
               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <li>
-                <h3><a href="the_field('article_link');"><?php the_title(); ?></a></h3>
+                <h3><a href="<?php the_field('article_link'); ?>"><?php the_title(); ?></a></h3>
                 <time class="meta"><?php the_date(); ?></time>
               </li>
               <?php endwhile; endif; ?>
