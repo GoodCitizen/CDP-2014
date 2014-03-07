@@ -44,9 +44,9 @@
         </div>
       </div>
     </div> <!-- /.row -->
-    <div class="row">
+    <div class="row hide-for-small-only">
       <div class="large-10 columns">
-        <div class="main-nav hide-for-small-only">
+        <div class="main-nav">
           <dl class="accordion" data-accordion>
             <dd>
               <a class="main-menu-stack disasters-link" href="#panel1">
