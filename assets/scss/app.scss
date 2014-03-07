@@ -30,18 +30,16 @@
 @import "containers/content-detail";
 @import "containers/home";
 
-.body-wrap {
-  min-height: 1000px;
-  overflow: auto;
-}
-
-
-
 /* ==========================================================================
    Base
    ========================================================================== */
 
 body { }
+
+.body-wrap {
+  min-height: 1000px;
+  overflow: auto;
+}
 
 .bolded{
   font-weight: 700;
