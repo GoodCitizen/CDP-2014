@@ -1,11 +1,8 @@
 <div class="off-canvas-wrap">
   <div class="inner-wrap">
-    <nav class="tab-bar show-for-small-only">
+    <nav class="tab-bar off-canvas-tab-bar show-for-small-only">
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon"><span></span></a>
-      </section>
-      <section class="right tab-bar-section">
-        <h1 class="title">CDP</h1>
       </section>
     </nav>
 
