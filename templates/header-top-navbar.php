@@ -29,7 +29,7 @@
       </div>
       <div class="large-7 columns">
         <div class="large-10 large-offset-2 columns">
-          <div class="top-bar-section secondary-nav">
+          <div class="top-bar-section secondary-nav hide-for-small-only">
             <?php
                if (has_nav_menu('primary_navigation')) :
                  wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'left'));
