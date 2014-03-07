@@ -93,7 +93,7 @@
                 </li>
                 <li>
                   <a href="<?php echo home_url(); ?>/disasters" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/disasters/fire.png);">
-                    <div class="caption">Past Disasters</div>
+                    <div class="caption">Other Disasters</div>
                   </a>
                 </li>
               </ul>
