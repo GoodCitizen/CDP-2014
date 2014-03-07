@@ -226,7 +226,30 @@ p img{
 /* ==========================================================================
    Content
    ========================================================================== */
+.hero{
+  width: 100%;
+}
+.hero ul li .caption{
+  position: absolute;
+  top: 5%;
+  left: 1%;
 
+}
+.hero ul li .caption h1, .hero ul li .caption h2, .hero ul li .caption h3, .hero ul li .caption h4, .hero ul li .caption h5{
+  text-align: left;
+  float: left;
+}
+.hero ul li .caption ul.hero-buttons{
+  float: left;
+}
+.slide-link{
+  img{
+    min-height: 400px;
+    min-width: 800px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
 .slide-bg {
   display: inline-block;
   height: 400px;
@@ -433,3 +456,24 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media only screen and (min-width: 40.063em) {
+  .hero ul li .caption{
+    top: 10%;
+    left: 30%;
+
+  }
+  .hero ul li .caption h1, .hero ul li .caption h2, .hero ul li .caption h3, .hero ul li .caption h4, .hero ul li .caption h5{
+    text-align: right;
+    float: right;
+  }
+  .hero ul li .caption ul.hero-buttons{
+    float: right;
+  }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) {
+  .hero ul li .caption{
+    left: 50%;
+  }
+} /* min-width 1025px, large screens */

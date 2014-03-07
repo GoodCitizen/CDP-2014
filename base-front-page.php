@@ -16,7 +16,7 @@
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php if( get_field('slide_image') ): ?>
       <li>
-        <a href="<?php the_field('slide_link'); ?>">
+        <a class="slide-link" href="<?php the_field('slide_link'); ?>">
           <img src="<?php the_field('slide_image'); ?>">
         </a>
         <div class='caption'>
