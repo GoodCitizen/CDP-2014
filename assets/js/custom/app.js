@@ -6,6 +6,12 @@ $(function() {
   });
 });
 
+$(document).ready(function() {
+    $(document).foundation();
+
+    // Hack to get off-canvas .menu-icon to fire on iOS
+    $('.menu-icon').click(function(){ false });
+});
 /*!
 * jQuery Cycle2; build: v20131005
 * http://jquery.malsup.com/cycle2/
