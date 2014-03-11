@@ -63,59 +63,57 @@
                 </dl>
                 <div class="tabs-content vertical">
                   <div class="content disaster-tabs active" id="panel1a">
-
-
-                <div class="menu-disaster-menu-container">
-                  <div class="large-6 columns center-menu">
-                    <ul>
-                      <li class="list-link-title"><a href="<?php echo home_url(); ?>/disasters/">Disasters</a></li>
-                      <li id="menu-item-6427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6427"><a href="<?php echo home_url(); ?>/where/disaster-statistics/">Disaster Statistics</a></li>
-                      <li id="menu-item-6425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6425"><a href="<?php echo home_url(); ?>/where/current-disasters/">Developing/Ongoing Disasters</a>
-                      <li id="menu-item-6444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6444"><a href="<?php echo home_url(); ?>/disasters/central-african-republic-car/">Central African Republic</a></li>
-                      <li id="menu-item-6430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a href="<?php echo home_url(); ?>/where/current-disasters/horn-of-africa-famine/">Horn of Africa</a></li>
-                      <li id="menu-item-6447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6447"><a href="<?php echo home_url(); ?>/disasters/mali/">Mali</a></li>
-                      <li id="menu-item-6446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6446"><a href="<?php echo home_url(); ?>/disasters/2013-philippines-earthquake-and-typhoon/">Philippines: Typhoon Haiyan</a></li>
-                      <li id="menu-item-6429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6429"><a href="<?php echo home_url(); ?>/where/current-disasters/sahel-food-crisis/">The Sahel</a></li>
-                      <li id="menu-item-6443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6443"><a href="<?php echo home_url(); ?>/disasters/hurricane-sandy/">Hurricane Sandy</a></li>
-                      <li id="menu-item-6445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6445"><a href="<?php echo home_url(); ?>/disasters/south-sudan/">South Sudan</a></li>
-                      <li id="menu-item-6448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6448"><a href="<?php echo home_url(); ?>/disasters/syria-crisis/">Syria</a></li>
-                    </ul>
-                  </div>
-                  <div class="large-6 columns far-right-menu">
-                    <ul>
-                      <li id="menu-item-6426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6426 list-link-title"><a href="<?php echo home_url(); ?>/where/archived-disasters/">Past Disasters</a>
-                      <li id="menu-item-6451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6451"><a href="<?php echo home_url(); ?>/disasters/colorado-floods-2013-2/">2013: Colorado Floods</a></li>
-                      <li id="menu-item-6441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6441"><a href="<?php echo home_url(); ?>/what-we-provide/events/other-upcoming-events/moore-oklahoma-tornado-teleconference/">2013: Moore, OK Tornado</a></li>
-                      <li id="menu-item-6457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6457"><a href="<?php echo home_url(); ?>/disasters/oklahoma-tornadoes/">2013: Oklahoma Tornadoes</a></li>
-                      <li id="menu-item-6452" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6452"><a href="<?php echo home_url(); ?>/disasters/pakistan/">2013: Pakistan Flooding</a></li>
-                      <li id="menu-item-6455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6455"><a href="<?php echo home_url(); ?>/disasters/cyclone-phailin/">2013: Philippines: Typhoon Phailin</a></li>
-                      <li id="menu-item-6458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6458"><a href="<?php echo home_url(); ?>/disasters/typhoon-bopha-philippines/">Philippines: Typhoon Bopha</a></li>
-                      <li id="menu-item-6456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6456"><a href="<?php echo home_url(); ?>/disasters/china-sichuan-province-earthquake/">2013: Sichuan Province Earthquake</a></li>
-                      <li id="menu-item-6454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6454"><a href="<?php echo home_url(); ?>/disasters/vietnam-typhoons-and-floods/">2013: Vietnam Flooding</a></li>
-                      <li id="menu-item-6449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6449"><a href="<?php echo home_url(); ?>/disasters/western-wildfires-2013/">2013: Western Wildfires</a></li>
-                      <li id="menu-item-6450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6450"><a href="<?php echo home_url(); ?>/disasters/hurricane-isaac/">2012: Hurricane Isaac</a></li>
-                      <li id="menu-item-6440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6440"><a href="<?php echo home_url(); ?>/where/archived-disasters/mid-atlantic-derecho/">2012: Mid-Atlantic Derecho</a></li>
-                      <li id="menu-item-6432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432"><a href="<?php echo home_url(); ?>/where/archived-disasters/thailand-flooding/">2012: Thailand Flooding</a></li>
-                      <li id="menu-item-6431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6431"><a href="<?php echo home_url(); ?>/where/archived-disasters/western-wildfires/">2012: Western Wildfires</a></li>
-                      <li id="menu-item-6435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6435"><a href="<?php echo home_url(); ?>/where/archived-disasters/hurricane-irene/">2011: Hurricane Irene</a></li>
-                      <li id="menu-item-6437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6437"><a href="<?php echo home_url(); ?>/where/archived-disasters/tornadoes-in-joplin-mo-and-tuscaloosa-al/">2011:  Joplin, Mo., and Tuscaloosa, Ala. Tornadoes</a></li>
-                      <li id="menu-item-6436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6436"><a href="<?php echo home_url(); ?>/where/archived-disasters/mid-south-flooding/">2011: Mid-South Flooding</a></li>
-                      <li id="menu-item-6453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6453"><a href="<?php echo home_url(); ?>/disasters/typhoons-in-the-philippines/">2011: Philippines Typhoons</a></li>
-                      <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a href="<?php echo home_url(); ?>/where/archived-disasters/texas-wildfires-2011/">2011: Texas Wildfires</a></li>
-                      <li id="menu-item-6438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6438"><a href="<?php echo home_url(); ?>/where/archived-disasters/earthquake-in-haiti/">2010: Haiti Earthquake</a></li>
-                      <li id="menu-item-6439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6439"><a href="<?php echo home_url(); ?>/where/archived-disasters/indian-ocean-tsunami/">2004: Indian Ocean Tsunami</a></li>
-                    </ul>
+                    <div class="menu-disaster-menu-container">
+                      <div class="large-6 columns center-menu">
+                        <ul>
+                          <li class="list-link-title"><a href="<?php echo home_url(); ?>/disasters/">Disasters</a></li>
+                          <li id="menu-item-6427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6427"><a href="<?php echo home_url(); ?>/where/disaster-statistics/">Disaster Statistics</a></li>
+                          <li id="menu-item-6425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6425"><a href="<?php echo home_url(); ?>/where/current-disasters/">Developing/Ongoing Disasters</a>
+                          <li id="menu-item-6444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6444"><a href="<?php echo home_url(); ?>/disasters/central-african-republic-car/">Central African Republic</a></li>
+                          <li id="menu-item-6430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a href="<?php echo home_url(); ?>/where/current-disasters/horn-of-africa-famine/">Horn of Africa</a></li>
+                          <li id="menu-item-6447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6447"><a href="<?php echo home_url(); ?>/disasters/mali/">Mali</a></li>
+                          <li id="menu-item-6446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6446"><a href="<?php echo home_url(); ?>/disasters/2013-philippines-earthquake-and-typhoon/">Philippines: Typhoon Haiyan</a></li>
+                          <li id="menu-item-6429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6429"><a href="<?php echo home_url(); ?>/where/current-disasters/sahel-food-crisis/">The Sahel</a></li>
+                          <li id="menu-item-6443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6443"><a href="<?php echo home_url(); ?>/disasters/hurricane-sandy/">Hurricane Sandy</a></li>
+                          <li id="menu-item-6445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6445"><a href="<?php echo home_url(); ?>/disasters/south-sudan/">South Sudan</a></li>
+                          <li id="menu-item-6448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6448"><a href="<?php echo home_url(); ?>/disasters/syria-crisis/">Syria</a></li>
+                        </ul>
+                      </div>
+                      <div class="large-6 columns far-right-menu">
+                        <ul>
+                          <li id="menu-item-6426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6426 list-link-title"><a href="<?php echo home_url(); ?>/where/archived-disasters/">Past Disasters</a>
+                          <li id="menu-item-6451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6451"><a href="<?php echo home_url(); ?>/disasters/colorado-floods-2013-2/">2013: Colorado Floods</a></li>
+                          <li id="menu-item-6441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6441"><a href="<?php echo home_url(); ?>/what-we-provide/events/other-upcoming-events/moore-oklahoma-tornado-teleconference/">2013: Moore, OK Tornado</a></li>
+                          <li id="menu-item-6457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6457"><a href="<?php echo home_url(); ?>/disasters/oklahoma-tornadoes/">2013: Oklahoma Tornadoes</a></li>
+                          <li id="menu-item-6452" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6452"><a href="<?php echo home_url(); ?>/disasters/pakistan/">2013: Pakistan Flooding</a></li>
+                          <li id="menu-item-6455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6455"><a href="<?php echo home_url(); ?>/disasters/cyclone-phailin/">2013: Philippines: Typhoon Phailin</a></li>
+                          <li id="menu-item-6458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6458"><a href="<?php echo home_url(); ?>/disasters/typhoon-bopha-philippines/">Philippines: Typhoon Bopha</a></li>
+                          <li id="menu-item-6456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6456"><a href="<?php echo home_url(); ?>/disasters/china-sichuan-province-earthquake/">2013: Sichuan Province Earthquake</a></li>
+                          <li id="menu-item-6454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6454"><a href="<?php echo home_url(); ?>/disasters/vietnam-typhoons-and-floods/">2013: Vietnam Flooding</a></li>
+                          <li id="menu-item-6449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6449"><a href="<?php echo home_url(); ?>/disasters/western-wildfires-2013/">2013: Western Wildfires</a></li>
+                          <li id="menu-item-6450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6450"><a href="<?php echo home_url(); ?>/disasters/hurricane-isaac/">2012: Hurricane Isaac</a></li>
+                          <li id="menu-item-6440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6440"><a href="<?php echo home_url(); ?>/where/archived-disasters/mid-atlantic-derecho/">2012: Mid-Atlantic Derecho</a></li>
+                          <li id="menu-item-6432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6432"><a href="<?php echo home_url(); ?>/where/archived-disasters/thailand-flooding/">2012: Thailand Flooding</a></li>
+                          <li id="menu-item-6431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6431"><a href="<?php echo home_url(); ?>/where/archived-disasters/western-wildfires/">2012: Western Wildfires</a></li>
+                          <li id="menu-item-6435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6435"><a href="<?php echo home_url(); ?>/where/archived-disasters/hurricane-irene/">2011: Hurricane Irene</a></li>
+                          <li id="menu-item-6437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6437"><a href="<?php echo home_url(); ?>/where/archived-disasters/tornadoes-in-joplin-mo-and-tuscaloosa-al/">2011:  Joplin, Mo., and Tuscaloosa, Ala. Tornadoes</a></li>
+                          <li id="menu-item-6436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6436"><a href="<?php echo home_url(); ?>/where/archived-disasters/mid-south-flooding/">2011: Mid-South Flooding</a></li>
+                          <li id="menu-item-6453" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6453"><a href="<?php echo home_url(); ?>/disasters/typhoons-in-the-philippines/">2011: Philippines Typhoons</a></li>
+                          <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433"><a href="<?php echo home_url(); ?>/where/archived-disasters/texas-wildfires-2011/">2011: Texas Wildfires</a></li>
+                          <li id="menu-item-6438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6438"><a href="<?php echo home_url(); ?>/where/archived-disasters/earthquake-in-haiti/">2010: Haiti Earthquake</a></li>
+                          <li id="menu-item-6439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6439"><a href="<?php echo home_url(); ?>/where/archived-disasters/indian-ocean-tsunami/">2004: Indian Ocean Tsunami</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!--
+                      <?php
+                        if (has_nav_menu('disaster_navigation')) :
+                          wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
+                        endif;
+                      ?>
+                    -->
                   </div>
                 </div>
-              <!--
-                <?php
-                  if (has_nav_menu('disaster_navigation')) :
-                    wp_nav_menu(array('theme_location' => 'disaster_navigation', 'menu_class' => ''));
-                  endif;
-                ?>
-              -->
-            </div>
-            </div>
               </div>
             </dd>
             <dd>
@@ -124,7 +122,7 @@
                 <dl class="tabs vertical">
                   <dd class="active"><a href="<?php echo home_url(); ?>/what-we-provide/">Services</a></dd>
                 </dl>
-              -->
+                -->
                 <dl class="tabs vertical dl-single-friend left-menu" data-tab>
                   <dd class="active"><a href="#panel1a">Services</a></dd>
                   <dd><a href="#panel2a">Custom Approaches</a></dd>
@@ -133,14 +131,14 @@
                   <dd><a href="#panel5a">Events</a></dd>
                 </dl>
                 <div class="tabs-content vertical">
-                  <div class="content active" id="panel1a">
+                  <div class="content services-tabs active" id="panel1a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6318" class="list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/">Services - Overview</a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel2a">
+                  <div class="content services-tabs" id="panel2a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6354" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6354 list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/custom-approaches/">Custom Approaches - Overview</a></li>
@@ -149,7 +147,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel3a">
+                  <div class="content services-tabs" id="panel3a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6361" class="menu-item list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/donor-collaboration/">Donor Collaboration - Overview</a></li>
@@ -163,14 +161,14 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel4a">
+                  <div class="content services-tabs" id="panel4a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6360 list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/community-of-practice/">Community of Practice - Overview</a></li>
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel5a">
+                  <div class="content services-tabs" id="panel5a">
                     <div class="large-12 columns center-menu">
                       <ul>
                         <li id="menu-item-6357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6357 list-link-title"><a href="<?php echo home_url(); ?>/what-we-provide/events/">Events - Overview</a></li>
@@ -201,7 +199,7 @@
                   <dd><a href="#panel5a">Principles for Disaster Philanthropists</a></dd>
                 </dl>
                 <div class="tabs-content vertical">
-                  <div class="content active" id="panel1a">
+                  <div class="content learning-tabs active" id="panel1a">
                     <div class="large-6 columns center-menu">
                       <ul>
                         <li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6368 list-link-title"><a href="<?php echo home_url(); ?>/learning-center/">Learning Center</a></li>
@@ -212,7 +210,7 @@
 
                     </div>
                   </div>
-                  <div class="content" id="panel2a">
+                  <div class="content learning-tabs" id="panel2a">
                     <div class="large-6 columns center-menu">
                       <ul>
                         <li id="menu-item-6371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6371 list-link-title"><a href="<?php echo home_url(); ?>/learning-center/issue-insights/">Issue Insights</a>
@@ -253,7 +251,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="content" id="panel3a">
+                  <div class="content learning-tabs" id="panel3a">
                     <div class="large-6 columns center-menu">
                       <ul>
                         <li id="menu-item-6373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6373 list-link-title"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/">CDP Spotlight</a></li>
@@ -263,7 +261,7 @@
                     <div class="large-6 columns far-right-menu">
                     </div>
                   </div>
-                  <div class="content" id="panel4a">
+                  <div class="content learning-tabs" id="panel4a">
                     <div class="large-6 columns center-menu">
                       <ul>
                         <li id="menu-item-6372" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6372 list-link-title"><a href="<?php echo home_url(); ?>/when/funding-worth-following/">Funding Worth Following</a>
@@ -278,7 +276,7 @@
                     <div class="large-6 columns far-right-menu">
                     </div>
                   </div>
-                  <div class="content" id="panel5a">
+                  <div class="content learning-tabs" id="panel5a">
                     <div class="large-6 columns center-menu">
                       <ul>
                         <li id="menu-item-6370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6370 list-link-title"><a href="<?php echo home_url(); ?>/learning-center/principles-of-disaster-management/">Principles for Disaster Philanthropists</a></li>
