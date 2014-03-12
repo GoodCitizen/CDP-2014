@@ -127,7 +127,7 @@
                   <dd class="active"><a href="#panel1a">Services</a></dd>
                   <dd><a href="#panel2a">Custom Approaches</a></dd>
                   <dd><a href="#panel3a">Donor Collaboration</a></dd>
-                  <dd><a href="#panel4a">Community of Practice</a></dd>
+                  <!-- <dd><a href="#panel4a">Community of Practice</a></dd> -->
                   <dd><a href="#panel5a">Events</a></dd>
                 </dl>
                 <div class="tabs-content vertical">
@@ -161,6 +161,7 @@
                       </ul>
                     </div>
                   </div>
+                  <!--
                   <div class="content services-tabs" id="panel4a">
                     <div class="large-12 columns center-menu">
                       <ul>
@@ -168,6 +169,7 @@
                       </ul>
                     </div>
                   </div>
+                  -->
                   <div class="content services-tabs" id="panel5a">
                     <div class="large-12 columns center-menu">
                       <ul>
