@@ -135,6 +135,20 @@
         </header> <!-- /.component-header -->
         <div class="large-2 columns side-nav">
           <?php dynamic_sidebar('sidebar-home-newsroom'); ?>
+          <?php query_posts('post_type=disasters&showposts=10'); ?>
+          <h5>Disasters</h5>
+          <ul>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+          <?php endwhile; endif; ?>
+            <li><a href="<?php echo home_url('/'); ?>/disasters">More</a></li>
+          </ul>
+          <?php wp_reset_query(); ?>
+          <h5>Issue Insights</h5>
+          <ul>
+            <?php wp_list_pages('parent=46&number=10&sort_column=post_title&title_li='); ?>
+            <li><a href="<?php echo home_url('/'); ?>/where/issue-insights">More</a></li>
+          </ul>
         </div>
         <div class="large-10 columns">
           <div class="news-listing">
