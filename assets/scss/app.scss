@@ -54,30 +54,39 @@ p img{
 .banner { }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-  padding: 0 8px;
+  padding: 0 10px;
   font-size: 12px;
   font-weight: bold;
   line-height: 45px;
-  background: #fff !important;
+  background: #fff;
+  &:hover {
+    background: #eee;
+  }
 }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   padding: 0 8px;
   color: rgb(153, 153, 153) !important;
 }
-.top-bar-section ul li>a {
-  font-size: 16px;
-}
-.top-bar-section .dropdown li a {
-  color: rgb(153, 153, 153) !important;
-}
-.top-bar-section ul li:hover>a {
-  color: rgb(153, 153, 153) !important;
-}
 .top-bar-section .has-dropdown>a {
-  padding-right: 10px !important;
-  .caret{
+  padding-right: 16px !important;
+  .caret {
     display: none !important;
     background: transparent;
+  }
+  &:after {
+    margin-top: -2px;
+    margin-right: 0;
+    right: 5px;
+    border: inset 4px;
+    border-color: rgba(0,0,0,.2) transparent transparent transparent;    
+  }
+}
+.top-bar-section .dropdown li a,
+.top-bar-section ul li:hover>a {
+  color: rgb(153, 153, 153) !important;
+  background: #eee !important;
+  &:hover {
+    color: $dark-grey !important;
   }
 }
 
