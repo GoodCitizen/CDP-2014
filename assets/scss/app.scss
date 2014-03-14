@@ -78,7 +78,7 @@ p img{
     margin-right: 0;
     right: 5px;
     border: inset 4px;
-    border-color: rgba(0,0,0,.2) transparent transparent transparent;    
+    border-color: rgba(0,0,0,.2) transparent transparent transparent;
   }
 }
 .top-bar-section .dropdown li a,
@@ -222,7 +222,7 @@ p img{
       color: #fff;
     }
   }
-  ul { 
+  ul {
     list-style: none;
   }
   .tabs dd a {
@@ -240,7 +240,7 @@ p img{
     border: none;
   }
   .center-menu {
-    // background: rgba(255, 255, 255, 0.5); 
+    // background: rgba(255, 255, 255, 0.5);
     ul {
       height: 100%;
       padding-top: 15px;
@@ -414,7 +414,21 @@ p img{
 .hentry .byline { }
 .hentry .entry-content { }
 .hentry footer { }
-
+.entry-content{
+  ul{
+    list-style: none;
+  }
+}
+.pager{
+  li{
+    display :inline;
+    padding: 10px;
+    &:first-child{
+      border-right: 1px solid #3986a8;
+      padding: 12px;
+    }
+  }
+}
 .byline{
   line-height: 20px;
 }
