@@ -101,12 +101,12 @@
           </div>
         </div>
       </div>
-
+      <!--
       <div class="cdp-spotlight component">
         <header class="component-header">
           <h1>CDP <strong>Spotlight</strong></h1>
           <h2>highlighting donors, NGOs and leaders the the field</h2>
-        </header> <!-- /.component-header -->
+        </header> /.component-header
         <div class="horizontal-image-slider logos">
           <ul>
             <?php query_posts('post_type=CDPPartners&showposts=4'); ?>
@@ -127,7 +127,7 @@
           </ul>
         </div>
       </div>
-
+      -->
       <div class="news-room component">
         <header class="component-header">
           <h1><strong>News and Insights from CDP</strong></h1>

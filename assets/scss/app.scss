@@ -263,6 +263,9 @@ p img{
   background: rgba(255,255,255,0.5) !important;
 }
 
+.social-nav ul li a{
+  color: #2b6882;
+}
 
 
 /* ==========================================================================
@@ -414,11 +417,7 @@ p img{
 .hentry .byline { }
 .hentry .entry-content { }
 .hentry footer { }
-.entry-content{
-  ul{
-    list-style: none;
-  }
-}
+
 .pager{
   li{
     display :inline;
