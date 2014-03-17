@@ -419,7 +419,11 @@ p img{
 .hentry .byline { }
 .hentry .entry-content { }
 .hentry footer { }
-
+.content-area{
+  h2,h3{
+    color: #3986a8 !important;
+  }
+}
 .pager{
   li{
     display :inline;
