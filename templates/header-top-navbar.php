@@ -1,6 +1,6 @@
 <div class="off-canvas-wrap">
   <div class="inner-wrap">
-    <nav class="tab-bar off-canvas-tab-bar show-for-small-only">
+    <nav class="tab-bar off-canvas-tab-bar hide-for-large-up">
       <section class="left-small">
         <a class="left-off-canvas-toggle menu-icon"><span></span></a>
       </section>
@@ -25,14 +25,15 @@
         </div>
       </div>
       <div class="large-7 columns">
-        <div class="large-10 large-offset-2 columns">
-          <div class="top-bar-section secondary-nav hide-for-small-only">
+        <div class="but-right">
+          <div class="top-bar-section secondary-nav show-for-large-up">
             <?php
                if (has_nav_menu('primary_navigation')) :
                  wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'left'));
                endif;
              ?>
           </div>
+
           <form role="search" method="get" action="<?php echo home_url('/'); ?>">
             <div class="search">
               <input type="search" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">

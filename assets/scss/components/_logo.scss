@@ -2,7 +2,11 @@ header {
   .logo {
     a {
       display: inline-block;
-      padding-top: 15px;
+      padding-top: 10px;
+      img{
+        height: auto;
+        min-width: 100%;
+      }
     }
   }
 }
