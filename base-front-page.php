@@ -154,7 +154,7 @@
           <div class="news-listing">
             <?php query_posts('showposts=3'); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="large-8 columns">
+            <div class="medium-8 columns">
               <h3 data-target="<?php the_permalink(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <div class="meta">
                 <?php the_author_posts_link(); ?>
@@ -163,7 +163,7 @@
               </div>
               <p><?php the_excerpt(); ?></p>
             </div>
-            <div class="large-4 columns">
+            <div class="medium-4 columns">
               <?php if (has_post_thumbnail()): ?>
                 <?php the_post_thumbnail('', array('class' => '')); ?>
               <?php endif;?>
