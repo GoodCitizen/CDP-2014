@@ -419,6 +419,11 @@ p img{
 .hentry .byline { }
 .hentry .entry-content { }
 .hentry footer { }
+.page-header{
+  h1{
+    display: inline-block;
+  }
+}
 .content-area{
   h2,h3{
     color: #3986a8 !important;
@@ -439,7 +444,7 @@ p img{
 }
 
 .social-buttons{
-  display: block;
+  display: inline-block;
   float: right;
   li{
     line-height: 10px;
