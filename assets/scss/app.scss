@@ -1,5 +1,5 @@
 /*!
- * Roots with Foundation 1.0
+ * Roots with Foundation 1.0 for CDP
  */
 
 @import "foundation/normalize.scss";
@@ -54,7 +54,7 @@ p img{
 .banner { }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
-  padding: 0 10px;
+  padding: auto 10px;
   font-size: 12px;
   font-weight: bold;
   line-height: 45px;
@@ -64,7 +64,7 @@ p img{
   }
 }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  padding: 0 8px;
+  padding: auto 8px;
   color: rgb(153, 153, 153) !important;
 }
 .top-bar-section .has-dropdown>a {
@@ -267,7 +267,9 @@ p img{
   color: #2b6882;
 }
 
-
+.but-right{
+  float: right;
+}
 /* ==========================================================================
    Content
    ========================================================================== */
