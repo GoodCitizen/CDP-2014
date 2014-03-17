@@ -492,10 +492,14 @@ p img{
 .alignright { float: right; }
 figure.alignnone { margin-left: 0; margin-right: 0; }
 .wp-caption{
-  width: 100%;
   max-width: 600px;
   height: auto;
   padding: 10px;
+  img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 .size-full{
   max-width: 100%;
