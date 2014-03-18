@@ -70,6 +70,7 @@
                         <ul>
                           <li class="list-link-title"><a href="<?php echo home_url(); ?>/disasters/">Disasters</a></li>
                           <li id="menu-item-6427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6427"><a href="<?php echo home_url(); ?>/where/disaster-statistics/">Disaster Statistics</a></li>
+                          <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<?php echo home_url(); ?>/where/what-we-cover/">What We Cover</a></li>
                           <li id="menu-item-6425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6425"><a href="<?php echo home_url(); ?>/where/current-disasters/">Developing/Ongoing Disasters</a>
                           <li id="menu-item-6444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6444"><a href="<?php echo home_url(); ?>/disasters/central-african-republic-car/">Central African Republic</a></li>
                           <li id="menu-item-6430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a href="<?php echo home_url(); ?>/where/current-disasters/horn-of-africa-famine/">Horn of Africa</a></li>
@@ -85,11 +86,11 @@
                         <ul>
                           <li id="menu-item-6426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6426 list-link-title"><a href="<?php echo home_url(); ?>/where/archived-disasters/">Past Disasters</a>
                           <li id="menu-item-6451" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6451"><a href="<?php echo home_url(); ?>/disasters/colorado-floods-2013-2/">2013: Colorado Floods</a></li>
-                          <li id="menu-item-6441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6441"><a href="<?php echo home_url(); ?>/what-we-provide/events/other-upcoming-events/moore-oklahoma-tornado-teleconference/">2013: Moore, OK Tornado</a></li>
+                          <!-- <li id="menu-item-6441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6441"><a href="<?php echo home_url(); ?>/what-we-provide/events/other-upcoming-events/moore-oklahoma-tornado-teleconference/">2013: Moore, OK Tornado</a></li> -->
                           <li id="menu-item-6457" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6457"><a href="<?php echo home_url(); ?>/disasters/oklahoma-tornadoes/">2013: Oklahoma Tornadoes</a></li>
                           <li id="menu-item-6452" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6452"><a href="<?php echo home_url(); ?>/disasters/pakistan/">2013: Pakistan Flooding</a></li>
                           <li id="menu-item-6455" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6455"><a href="<?php echo home_url(); ?>/disasters/cyclone-phailin/">2013: Philippines: Typhoon Phailin</a></li>
-                          <li id="menu-item-6458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6458"><a href="<?php echo home_url(); ?>/disasters/typhoon-bopha-philippines/">Philippines: Typhoon Bopha</a></li>
+                          <li id="menu-item-6458" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6458"><a href="<?php echo home_url(); ?>/disasters/typhoon-bopha-philippines/">2013: Philippines: Typhoon Bopha</a></li>
                           <li id="menu-item-6456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6456"><a href="<?php echo home_url(); ?>/disasters/china-sichuan-province-earthquake/">2013: Sichuan Province Earthquake</a></li>
                           <li id="menu-item-6454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6454"><a href="<?php echo home_url(); ?>/disasters/vietnam-typhoons-and-floods/">2013: Vietnam Flooding</a></li>
                           <li id="menu-item-6449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6449"><a href="<?php echo home_url(); ?>/disasters/western-wildfires-2013/">2013: Western Wildfires</a></li>
@@ -259,7 +260,10 @@
                     <div class="large-6 columns center-menu">
                       <ul>
                         <li id="menu-item-6373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6373 list-link-title"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/">CDP Spotlight</a></li>
-                        <li id="menu-item-6381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6381"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/making-the-most-of-donated-funds/">Donor Spotlight: Ansara’s Believe in Maximizing Gifts</a></li>
+                        <!-- <li id="menu-item-6381" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6381"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/making-the-most-of-donated-funds/">Donor Spotlight: Ansara’s Believe in Maximizing Gifts</a></li> -->
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/spotlight-the-conrad-n-hilton-foundation-makes-grants-for-syrian-relief-efforts/">The Conrad N. Hilton Foundation</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/spotlight-greater-kansas-community-foundation/">Greater Kansas Community Foundation</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<?php echo home_url(); ?>/learning-center/cdp-spotlight/spotlight-human-services-council-of-new-york/">Human Services Council of New York</a></li>
                       </ul>
                     </div>
                     <div class="large-6 columns far-right-menu">
