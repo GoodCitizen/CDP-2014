@@ -26,14 +26,15 @@
       </div>
       <div class="large-7 columns">
         <div class="but-right">
-          <div class="top-bar-section secondary-nav show-for-large-up">
-            <?php
-               if (has_nav_menu('primary_navigation')) :
-                 wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'left'));
-               endif;
-             ?>
-          </div>
-
+          <nav class="top-bar" data-topbar>
+            <div class="top-bar-section secondary-nav show-for-large-up">
+              <?php
+                 if (has_nav_menu('primary_navigation')) :
+                   wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'left'));
+                 endif;
+               ?>
+            </div>
+          </nav>
           <form role="search" method="get" action="<?php echo home_url('/'); ?>">
             <div class="search">
               <input type="search" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">

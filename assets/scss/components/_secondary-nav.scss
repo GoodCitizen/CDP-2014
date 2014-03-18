@@ -9,7 +9,7 @@
       @extend .inline;
       a {
         color: $mid-grey;
-        display: inline-block;
+        display: block;
         padding: 4px;
         &:hover {
           color: $blue;
