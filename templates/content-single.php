@@ -15,7 +15,7 @@
     <div class="entry-content">
 
     <?php if ( is_singular( 'disasters' ) ): ?>
-        <dl class="tabs" data-tab>
+        <dl class="disaster-tabs tabs" data-tab>
           <dd class="active"><a href="#panel2-1">Article</a></dd>
           <dd><a href="#panel2-2">Background</a></dd>
           <dd><a href="#panel2-3">Facts & Stats</a></dd>
@@ -59,27 +59,26 @@
     </div>
     <div class="related-posts">
       <h3>Related posts</h3>
-      <?php global $post; $current_post_type = get_post_type( $post );
-        $args = array(
-          'posts_per_page' => 5,
-          'order' => 'DESC',
-          'orderby' => 'ID',
-          'post_type' => $current_post_type,
-          'post__not_in' => array( $post->ID )
-        );
-        $rel_query = new WP_Query( $args );
-        if( $rel_query->have_posts() ) :
-      ?>
-       <?php while ( $rel_query->have_posts() ) : $rel_query->the_post(); ?>
+
+      <?php
+        $test = "";
+        $posttags = get_the_tags();
+        if ($posttags) {
+          foreach($posttags as $tag) {
+            $test .= ',' . $tag->name;
+          }
+        }
+        $test = substr($test, 1); // remove first comma
+        query_posts('tag=' .$test . '&showposts=5&order=DESC'); while (have_posts()) : the_post(); ?>
+
        <a href="<?php the_permalink(); ?>">
          <h2 class="h2-recent-post"><?php the_title(); ?></h2>
        </a>
          <time class="published published-recent" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
          <p class="byline author vcard author-recent"><?php echo __('By', 'roots'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" rel="author" class="fn"><?php echo get_the_author(); ?></a></p>
 
-      <?php endwhile; ?>
+      <?php endwhile; wp_reset_query(); ?>
     </div><!-- /related-posts -->
-    <?php endif; wp_reset_query(); ?>
     <div>
       <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
     </div>
