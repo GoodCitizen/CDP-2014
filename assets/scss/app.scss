@@ -257,12 +257,25 @@ p img{
   }
 }
 
-.disaster-tabs, .services-tabs, .learning-tabs {
+.disaster-menu-tabs, .services-tabs, .learning-tabs {
   padding: 0 !important;
   overflow: hidden;
   background: rgba(255,255,255,0.5) !important;
 }
-
+.link-group-header{
+  margin-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+.link-divider{
+  display: block;
+  height: 1px;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
 .social-nav ul li a{
   color: #2b6882;
 }

@@ -64,19 +64,21 @@
                   <dd class="active"><a href="panel1a">Disasters</a></dd>
                 </dl>
                 <div class="tabs-content vertical">
-                  <div class="content disaster-tabs active" id="panel1a">
+                  <div class="content disaster-menu-tabs active" id="panel1a">
                     <div class="menu-disaster-menu-container">
                       <div class="large-6 columns center-menu">
                         <ul>
                           <li class="list-link-title"><a href="<?php echo home_url(); ?>/disasters/">Disasters</a></li>
                           <li id="menu-item-6427" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6427"><a href="<?php echo home_url(); ?>/where/disaster-statistics/">Disaster Statistics</a></li>
                           <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<?php echo home_url(); ?>/where/what-we-cover/">What We Cover</a></li>
-                          <li id="menu-item-6425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6425"><a href="<?php echo home_url(); ?>/where/current-disasters/">Developing/Ongoing Disasters</a>
+
+                          <li id="menu-item-6425" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6425 link-group-header"><a href="<?php echo home_url(); ?>/where/current-disasters/">Developing/Ongoing Disasters</a></li>
+
                           <li id="menu-item-6444" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6444"><a href="<?php echo home_url(); ?>/disasters/central-african-republic-car/">Central African Republic</a></li>
-                          <li id="menu-item-6430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a href="<?php echo home_url(); ?>/where/current-disasters/horn-of-africa-famine/">Horn of Africa</a></li>
+                          <li id="menu-item-6430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6430"><a href="<?php echo home_url(); ?>/disasters/horn-of-africa-famine/">Horn of Africa</a></li>
                           <li id="menu-item-6447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6447"><a href="<?php echo home_url(); ?>/disasters/mali/">Mali</a></li>
                           <li id="menu-item-6446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6446"><a href="<?php echo home_url(); ?>/disasters/2013-philippines-earthquake-and-typhoon/">Philippines: Typhoon Haiyan</a></li>
-                          <li id="menu-item-6429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6429"><a href="<?php echo home_url(); ?>/where/current-disasters/sahel-food-crisis/">The Sahel</a></li>
+                          <li id="menu-item-6429" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6429"><a href="<?php echo home_url(); ?>/disasters/sahel-food-crisis/">The Sahel</a></li>
                           <li id="menu-item-6443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6443"><a href="<?php echo home_url(); ?>/disasters/hurricane-sandy/">Hurricane Sandy</a></li>
                           <li id="menu-item-6445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6445"><a href="<?php echo home_url(); ?>/disasters/south-sudan/">South Sudan</a></li>
                           <li id="menu-item-6448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6448"><a href="<?php echo home_url(); ?>/disasters/syria-crisis/">Syria</a></li>
