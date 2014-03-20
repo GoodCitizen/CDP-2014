@@ -34,8 +34,8 @@ function roots_scripts() {
   wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '97d057f56f2b8a921f6577ead0abc54b', true);
   wp_register_script('roots_twitter', get_template_directory_uri() . '/assets/js/custom/twitter.js', array(), 'false', true);
   wp_register_script('dropdown', get_template_directory_uri() . '/assets/js/plugins/foundation/dropdown.js', array(), 'false', true);
-  wp_register_script('foundation', get_template_directory_uri() . '/assets/js/custom/foundation.min.js', array(), 'false', true);
-  wp_register_script('roots_app', get_template_directory_uri() . '/assets/js/custom/app.js', array(), 'false', true);
+  wp_register_script('foundation', get_template_directory_uri() . '/assets/js/custom/foundation.min.js', array(), null, true);
+  wp_register_script('roots_app', get_template_directory_uri() . '/assets/js/custom/app.js', array(), null, true);
   wp_enqueue_script('modernizr');
   wp_enqueue_script('jquery');
   // wp_enqueue_script('roots_scripts');

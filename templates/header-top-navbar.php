@@ -26,7 +26,7 @@
       </div>
       <div class="large-7 columns">
         <div class="but-right">
-          <nav class="top-bar" data-topbar>
+          <nav class="top-bar">
             <div class="top-bar-section secondary-nav show-for-large-up">
               <?php
                  if (has_nav_menu('primary_navigation')) :

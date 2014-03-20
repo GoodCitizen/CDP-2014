@@ -87,7 +87,9 @@ p img{
     color: $dark-grey !important;
   }
 }
-
+.top-bar-section .dropdown{
+  z-index: 210;
+}
 .main-nav {
   margin-top: 10px;
   width: 100%;
@@ -96,7 +98,7 @@ p img{
 }
 .accordion {
   position: absolute;
-  z-index: 1;
+  z-index: 200;
   width: 100%;
 }
 
