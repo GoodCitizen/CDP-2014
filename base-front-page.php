@@ -152,10 +152,10 @@
             <li><a href="<?php echo home_url('/'); ?>/where/issue-insights">More</a></li>
           </ul>
         </div>
-        <div class="large-10 columns">
+        <div class="news-listings large-10 columns">
+          <?php query_posts('showposts=3'); ?>
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="news-listing">
-            <?php query_posts('showposts=3'); ?>
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="medium-8 columns">
               <h3 data-target="<?php the_permalink(); ?>"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <div class="meta">
@@ -170,9 +170,9 @@
                 <?php the_post_thumbnail('', array('class' => '')); ?>
               <?php endif;?>
             </div>
-            <?php endwhile; endif; ?>
-            <?php wp_reset_query(); ?>
-          </div>
+          </div> <!-- /.news-listing -->
+          <?php endwhile; endif; ?>
+          <?php wp_reset_query(); ?>
         </div>
       </div>
 
@@ -180,18 +180,18 @@
         <header class="component-header">
           <h1>The <strong>Media Room</strong></h1>
         </header> <!-- /.component-header -->
-        <div class="large-8 offset-2 columns">
-          <div class="news-listing">
-            <ul>
-              <?php query_posts('post_type=medialinks&showposts=3'); ?>
-              <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-              <li>
+        <div class="large-12 columns">
+          <div class="news-listings">
+            <?php query_posts('post_type=medialinks&showposts=3'); ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="news-listing medium-4 columns">
+              <div class="news-listing-inner">
                 <h3><a href="<?php the_field('article_link'); ?>"><?php the_title(); ?></a></h3>
                 <time class="meta"><?php the_date(); ?></time>
-              </li>
-              <?php endwhile; endif; ?>
-              <?php wp_reset_query(); ?>
-            </ul>
+              </div>
+            </div>
+            <?php endwhile; endif; ?>
+            <?php wp_reset_query(); ?>
           </div>
         </div>
       </div>
