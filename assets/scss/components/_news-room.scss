@@ -3,6 +3,11 @@
 .news-room.component {
   overflow: auto;
   .side-nav {
+    padding-top: 0.5rem;
+    @extend .sans;
+    h5 {
+      margin-top: 0;
+    }
     a {
       color: $blue;
       &:hover {
@@ -10,27 +15,19 @@
       }
     }
     ul {
-      margin-bottom: 20px;
+      margin: 0 0 20px 0;
+      padding: 0;
+      list-style: none;
       & > li {
-        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        font-size: 0.775rem;
+        font-weight: 700;
         & > ul {
           & > li {
             font-weight: normal;
           }
         }
-      }
-    }
-    ul {
-      margin: {
-        left: 0;
-        right: 0;
-      };
-      padding: 0;
-      list-style: none;
-      li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
       }
     }
   }

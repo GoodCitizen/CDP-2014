@@ -6,23 +6,52 @@
     overflow: auto;
     padding: 40px 0;
     border-bottom: 1px solid $light-grey;
-    .component-header {
-      margin-bottom: 20px;
-    }
+  }
+  .component-header {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    overflow: hidden; // to clear the floated h2 below
     h1 {
-      color: $red;
-      text-transform: uppercase;
       font-size: 1.4em;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px rgba(0,0,0,0.3);
       strong {
         font-weight: 700;
       }
     }
     h2 {
-      @extend .sans;
-      color: $mid-grey;
-      font-size: 1.2em;
-      float: right;
       margin-top: -35px;
+      float: right;
+      @extend .sans;
+      font-size: 1.2em;
+      font-weight: 400;
+      color: rgba(255,255,255,.6);
+    }
+  }
+  .disaster-dashboard {
+    .component-header {
+      background: $gold;
+    }
+    .horizontal-image-slider {
+      a {
+        border: 5px solid $gold;
+      }
+      .caption {
+        text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+        background-color: rgba($gold,.8);
+      }
+    }
+  }
+  .news-room {
+    .component-header {
+      background: $red;
+    }
+  }
+  .media-room {
+    .component-header {
+      background: $blue;
     }
   }
 }

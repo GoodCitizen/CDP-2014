@@ -101,6 +101,7 @@
           </div>
         </div>
       </div>
+
       <!--
       <div class="cdp-spotlight component">
         <header class="component-header">
@@ -128,10 +129,11 @@
         </div>
       </div>
       -->
+
       <div class="news-room component">
         <header class="component-header">
-          <h1><strong>News and Insights from CDP</strong></h1>
-          <h2>expert insights</h2>
+          <h1>News and Insights <strong>from CDP</strong></h1>
+          <h2>Expert insights</h2>
         </header> <!-- /.component-header -->
         <div class="large-2 columns side-nav">
           <?php dynamic_sidebar('sidebar-home-newsroom'); ?>
