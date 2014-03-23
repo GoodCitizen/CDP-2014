@@ -187,7 +187,7 @@
             <div class="news-listing medium-4 columns">
               <div class="news-listing-inner">
                 <h3><a href="<?php the_field('article_link'); ?>"><?php the_title(); ?></a></h3>
-                <time class="meta"><?php the_date(); ?></time>
+                <!-- <time class="meta"><?php the_date(); ?></time> -->
               </div>
             </div>
             <?php endwhile; endif; ?>

@@ -209,7 +209,6 @@
                   <div class="content learning-tabs active" id="panel1a">
                     <div class="large-6 columns center-menu">
                       <ul>
-                        <li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6368 list-link-title"><a href="<?php echo home_url(); ?>/learning-center/">Learning Center</a></li>
                         <li id="menu-item-6369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6369"><a href="<?php echo home_url(); ?>/learning-center/basic-tips-for-disaster-giving/">Basic Tips for Disaster Giving</a></li>
                       </ul>
                     </div>
