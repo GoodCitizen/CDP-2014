@@ -47,6 +47,16 @@ body { }
 p img{
   padding: 10px;
 }
+
+/* Blink(Chrome) ul reset */
+
+ul{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -101,7 +111,6 @@ p img{
   z-index: 200;
   width: 100%;
 }
-
 .accordion dd>.main-menu-stack {
   margin-right: 10px;
   padding: 5px 15px;
@@ -170,33 +179,52 @@ p img{
     border-bottom: 5px solid rgba(57, 134, 168, 1);
   }
 }
-
 .accordion .content.active {
   background: transparent;
 }
 .accordion .content.disasters-panel {
-  width: 100%;
-  // height: 760px;
   overflow: hidden;
   background: rgba(189, 172, 133, 1);
+  width: 300px;
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   .tabs-content {
     margin-bottom: 0;
   }
 }
 .accordion .content.services-panel {
-  width: 100%;
-  // height: 450px;
+  position: absolute;
+  left: 138px;
+  width: 300px;
   overflow: hidden;
   background: rgba(156, 66, 43, 1);
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   .tabs-content {
     margin-bottom: 0;
   }
+
 }
 .accordion .content.learning-panel {
-  width: 100%;
-  // height: 650px;
+  position: absolute;
+  left: 267px;
+  width: 300px;
   overflow: hidden;
   background: rgba(57, 134, 168, 1);
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   .tabs-content {
     margin-bottom: 0;
   }
@@ -217,13 +245,28 @@ p img{
 
 .disasters-panel, .services-panel, .learning-panel {
   a, .link {
-    color: #555555;
+    color: #fff;
     &:hover{
       color: #fff;
+    }
+    .desc{
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 14px;
     }
   }
   ul {
     list-style: none;
+  }
+  li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    &:last-child{
+      border-bottom: none;
+    }
   }
   .tabs dd a {
     font: normal 1rem "Open Sans";
@@ -255,6 +298,10 @@ p img{
       padding-bottom: 15px;
     }
   }
+}
+
+.main-menu-items{
+  // width: 640px;
 }
 
 .disaster-menu-tabs, .services-tabs, .learning-tabs {
