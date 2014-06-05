@@ -29,6 +29,23 @@ function create_cdp_slides_post() {
 }
 add_action( 'init', 'create_cdp_slides_post' );
 
+function create_cdp_issue_insights() {
+  register_post_type( 'IssueInsights',
+    array(
+      'labels' => array(
+        'name' => __( 'Issue Insights' ),
+        'singular_name' => __( 'IssueInsights' )
+      ),
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array('title','editor','revisions','thumbnail','page-attributes', 'custom-fields'),
+    'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
+    )
+  );
+}
+add_action( 'init', 'create_cdp_issue_insights' );
+
+
 
 function cptui_register_my_cpt_disasters() {
   register_post_type('disasters',
