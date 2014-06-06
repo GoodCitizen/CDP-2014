@@ -244,27 +244,32 @@ ul{
 }
 
 .disasters-panel, .services-panel, .learning-panel {
-  a, .link {
-    color: #fff;
-    &:hover{
-      color: #fff;
-    }
-    .desc{
-      color: rgba(255, 255, 255, 0.3);
-      font-size: 14px;
-    }
-  }
   ul {
+    margin: 0 -.9375rem; // to offset the default .accordion .content padding from Foundation
     list-style: none;
   }
-  li{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    &:last-child a{
+  li {
+    padding: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    &:last-child {
       border-bottom: none;
+    }
+  }
+  a,
+  .link {
+    padding: 10px 15px 12px;
+    padding: .75rem 1rem;
+    display: block;
+    font: 900 16px "Roboto Slab", serif;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background: rgba(255,255,255,.1);
+    }
+    .desc {
+      font: 14px "Open Sans", sans-serif;
+      color: rgba(255,255,255,.65);
     }
   }
   .tabs dd a {
@@ -325,14 +330,16 @@ ul{
 .social-nav ul li a{
   color: #2b6882;
 }
-
 .but-right{
   float: right;
 }
+
+
 /* ==========================================================================
    Content
    ========================================================================== */
-.hero{
+
+.hero {
   width: 100%;
 }
 .hero ul li .caption{
@@ -496,6 +503,7 @@ ul{
   border-top: 1px solid #ccc;
 }
 
+
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -545,6 +553,8 @@ ul{
     display: inline-block;
   }
 }
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -619,28 +629,6 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
   max-width: 150px;
 }
 
-
-/* John's Hover States */
-
-.disasters-panel a, .disasters-panel .link, .services-panel a, .services-panel .link, .learning-panel a, .learning-panel .link {
-  margin-left: -.9375rem;
-  margin-right: -.9375rem;
-  padding: .75rem 1rem;
-  display: block;
-  font: 900 16px "Roboto Slab", serif;
-  color: #fff;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-}
-
-.disasters-panel a:hover, .disasters-panel .link:hover, .services-panel a:hover, .services-panel .link:hover, .learning-panel a:hover, .learning-panel .link:hover {
-  color: #fff;
-  background: rgba(255,255,255,.1);
-}
-
-.disasters-panel a .desc, .disasters-panel .link .desc, .services-panel a .desc, .services-panel .link .desc, .learning-panel a .desc, .learning-panel .link .desc {
-  font: normal 14px "Open Sans", sans-serif;
-  color: rgba(255,255,255,0.6);
-}
 
 /* ==========================================================================
    Media Queries
