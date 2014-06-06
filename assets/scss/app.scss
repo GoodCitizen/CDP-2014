@@ -263,8 +263,7 @@ ul{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    &:last-child{
+    &:last-child a{
       border-bottom: none;
     }
   }
@@ -618,6 +617,29 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 
 .post-4686 .wp-caption-text{
   max-width: 150px;
+}
+
+
+/* John's Hover States */
+
+.disasters-panel a, .disasters-panel .link, .services-panel a, .services-panel .link, .learning-panel a, .learning-panel .link {
+  margin-left: -.9375rem;
+  margin-right: -.9375rem;
+  padding: .75rem 1rem;
+  display: block;
+  font: 900 16px "Roboto Slab", serif;
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.disasters-panel a:hover, .disasters-panel .link:hover, .services-panel a:hover, .services-panel .link:hover, .learning-panel a:hover, .learning-panel .link:hover {
+  color: #fff;
+  background: rgba(255,255,255,.1);
+}
+
+.disasters-panel a .desc, .disasters-panel .link .desc, .services-panel a .desc, .services-panel .link .desc, .learning-panel a .desc, .learning-panel .link .desc {
+  font: normal 14px "Open Sans", sans-serif;
+  color: rgba(255,255,255,0.6);
 }
 
 /* ==========================================================================
