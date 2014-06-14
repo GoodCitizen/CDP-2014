@@ -3,8 +3,6 @@
 .sass-cache
 Gruntfile.js
 node_modules
-assets/css/main.min.css.map
-
 
 *.sublime-project
 *.sublime-workspace

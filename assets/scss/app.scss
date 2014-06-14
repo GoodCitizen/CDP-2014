@@ -47,6 +47,16 @@ body { }
 p img{
   padding: 10px;
 }
+
+/* Blink(Chrome) ul reset */
+
+ul{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -101,7 +111,6 @@ p img{
   z-index: 200;
   width: 100%;
 }
-
 .accordion dd>.main-menu-stack {
   margin-right: 10px;
   padding: 5px 15px;
@@ -170,33 +179,52 @@ p img{
     border-bottom: 5px solid rgba(57, 134, 168, 1);
   }
 }
-
 .accordion .content.active {
   background: transparent;
 }
 .accordion .content.disasters-panel {
-  width: 100%;
-  // height: 760px;
   overflow: hidden;
   background: rgba(189, 172, 133, 1);
+  width: 300px;
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   .tabs-content {
     margin-bottom: 0;
   }
 }
 .accordion .content.services-panel {
-  width: 100%;
-  // height: 450px;
+  position: absolute;
+  left: 138px;
+  width: 300px;
   overflow: hidden;
   background: rgba(156, 66, 43, 1);
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   .tabs-content {
     margin-bottom: 0;
   }
+
 }
 .accordion .content.learning-panel {
-  width: 100%;
-  // height: 650px;
+  position: absolute;
+  left: 267px;
+  width: 300px;
   overflow: hidden;
   background: rgba(57, 134, 168, 1);
+  -webkit-border-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius: 5px;
+  -moz-border-radius-topleft: 0;
+  border-radius: 5px;
+  border-top-left-radius: 0;
   .tabs-content {
     margin-bottom: 0;
   }
@@ -216,14 +244,33 @@ p img{
 }
 
 .disasters-panel, .services-panel, .learning-panel {
-  a, .link {
-    color: #555555;
-    &:hover{
-      color: #fff;
+  ul {
+    margin: 0 -.9375rem; // to offset the default .accordion .content padding from Foundation
+    list-style: none;
+  }
+  li {
+    padding: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    &:last-child {
+      border-bottom: none;
     }
   }
-  ul {
-    list-style: none;
+  a,
+  .link {
+    padding: 10px 15px 12px;
+    padding: .75rem 1rem;
+    display: block;
+    font: 900 16px "Roboto Slab", serif;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background: rgba(255,255,255,.1);
+    }
+    .desc {
+      font: 14px "Open Sans", sans-serif;
+      color: rgba(255,255,255,.65);
+    }
   }
   .tabs dd a {
     font: normal 1rem "Open Sans";
@@ -257,6 +304,10 @@ p img{
   }
 }
 
+.main-menu-items{
+  // width: 640px;
+}
+
 .disaster-menu-tabs, .services-tabs, .learning-tabs {
   padding: 0 !important;
   overflow: hidden;
@@ -279,14 +330,16 @@ p img{
 .social-nav ul li a{
   color: #2b6882;
 }
-
 .but-right{
   float: right;
 }
+
+
 /* ==========================================================================
    Content
    ========================================================================== */
-.hero{
+
+.hero {
   width: 100%;
 }
 .hero ul li .caption{
@@ -450,6 +503,7 @@ p img{
   border-top: 1px solid #ccc;
 }
 
+
 /* ==========================================================================
    Sidebar
    ========================================================================== */
@@ -499,6 +553,8 @@ p img{
     display: inline-block;
   }
 }
+
+
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -572,6 +628,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 .post-4686 .wp-caption-text{
   max-width: 150px;
 }
+
 
 /* ==========================================================================
    Media Queries

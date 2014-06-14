@@ -4,6 +4,11 @@
    Custom Post Types mostly
  */
 
+function gt_add_menu_item_description( $item_output, $item, $depth, $args ) {
+	$desc = __( $item->post_content );
+	return preg_replace('/(<a.*?>[^<]*?)</', '$1' . "<div class=\"desc\">{$desc}</div><", $item_output);
+}
+add_filter( 'walker_nav_menu_start_el', 'gt_add_menu_item_description', 10, 4);
  // show_admin_bar(false);
 
 function remove_width_attribute( $html ) {
@@ -28,23 +33,6 @@ function create_cdp_slides_post() {
   );
 }
 add_action( 'init', 'create_cdp_slides_post' );
-
-function create_cdp_issue_insights() {
-  register_post_type( 'IssueInsights',
-    array(
-      'labels' => array(
-        'name' => __( 'Issue Insights' ),
-        'singular_name' => __( 'IssueInsights' )
-      ),
-    'public' => true,
-    'has_archive' => true,
-    'supports' => array('title','editor','revisions','thumbnail','page-attributes', 'custom-fields'),
-    'taxonomies' => array('category', 'post_tag') // this is IMPORTANT
-    )
-  );
-}
-add_action( 'init', 'create_cdp_issue_insights' );
-
 
 
 function cptui_register_my_cpt_disasters() {
