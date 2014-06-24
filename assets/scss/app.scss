@@ -573,6 +573,11 @@ ul{
 }
 .newsletter-signup {
   margin-bottom: 30px;
+  form {
+    padding: 2.5%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+  }
 }
 .footer-header {
   color: rgba(255,255,255,0.6);
@@ -580,8 +585,18 @@ ul{
   font-size: 24px;
 }
 .footer-input {
-  background: rgba(255,255,255,0.3) !important;
   padding: 10px !important;
+  background: #fff !important;
+  border: none;
+  border-radius: 5px; 
+}
+#first_name,
+#last_name {
+  width: 48.75%;
+  float: left;
+}
+#first_name {
+  margin-right: 2.5%;
 }
 .footer-btn {
   -webkit-border-radius: 0;
