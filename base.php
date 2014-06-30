@@ -15,12 +15,12 @@
         <aside class="sidebar <?php echo roots_sidebar_class(); ?>" role="complementary">
           <?php include roots_sidebar_path(); ?>
         </aside> <!-- /.sidebar.<?php echo roots_sidebar_class(); ?> -->
-      <?php endif; ?>
         <main class="main <?php echo roots_main_class(); ?>" role="main">
           <div class="content-area">
             <?php include roots_template_path(); ?>
           </div> <!-- /.content-area -->
         </main> <!-- /.main.<?php echo roots_main_class(); ?> -->
+      <?php endif; ?>
       </div> <!-- /.row -->
     </div> <!-- /.content-detail.container -->
 

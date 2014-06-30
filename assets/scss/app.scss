@@ -507,8 +507,53 @@ ul{
 /* ==========================================================================
    Sidebar
    ========================================================================== */
+.mini-sidebar{
+  padding-left: 0;
+  padding-right: 0;
+}
+.sidebar{
+  margin-top: 30px;
+  .side-nav {
+    padding-top: 0.5rem;
+    @extend .sans;
+    h5 {
+      margin-top: 0;
+    }
+    a {
+      color: $blue;
+      &:hover {
+        color: $red !important;
+      }
+      &:focus{
+        color: $red !important;
+      }
+      &:active{
+        color: $red !important;
+      }
+    }
+    ul {
+      margin: 0 0 20px 0;
+      padding: 0;
+      list-style: none;
+      & > li {
+        margin: 0;
+        padding: 0;
+        font-size: 0.775rem;
+        font-weight: 700;
+        & > ul {
+          & > li {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
 
-
+.side-nav li.active>a:first-child:not(.button){
+  font-weight: 700;
+  color: $red !important;
+}
 /* ==========================================================================
    Posts
    ========================================================================== */
@@ -588,7 +633,7 @@ ul{
   padding: 10px !important;
   background: #fff !important;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 #first_name,
 #last_name {
