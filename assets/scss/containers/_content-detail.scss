@@ -103,9 +103,10 @@
 }
 
 .content-area {
-  border: 1px solid #cccccc;
   padding: 30px;
-  box-shadow: 0 0 3px rgba(black, 0.5);
+  border: 1px solid #cccccc;
+  border-width: 1px 1px 0;
+  // box-shadow: 0 0 3px rgba(black, 0.5);
   color: #444444;
   img {
     margin-bottom: 20px;
