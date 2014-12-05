@@ -2,8 +2,8 @@
  * Roots with Foundation 1.0 for CDP
  */
 
-@import "foundation/normalize.scss";
-@import "foundation/foundation.scss";
+@import "normalize.scss";
+@import "foundation.scss";
 
 @import "buttons";
 @import "colors";
@@ -179,10 +179,10 @@ ul{
     border-bottom: 5px solid rgba(57, 134, 168, 1);
   }
 }
-.accordion .content.active {
+.accordion dd>.content.active {
   background: transparent;
 }
-.accordion .content.disasters-panel {
+.accordion dd>.content.disasters-panel {
   overflow: hidden;
   background: rgba(189, 172, 133, 1);
   width: 300px;
@@ -196,9 +196,9 @@ ul{
     margin-bottom: 0;
   }
 }
-.accordion .content.services-panel {
+.accordion dd>.content.services-panel {
   position: absolute;
-  left: 138px;
+  left: 137px;
   width: 300px;
   overflow: hidden;
   background: rgba(156, 66, 43, 1);
@@ -213,9 +213,9 @@ ul{
   }
 
 }
-.accordion .content.learning-panel {
+.accordion dd>.content.learning-panel {
   position: absolute;
-  left: 267px;
+  left: 266px;
   width: 300px;
   overflow: hidden;
   background: rgba(57, 134, 168, 1);
@@ -471,8 +471,9 @@ ul{
   border: 1px solid #ccc;
   border-width: 0 0 1px 0;
   dd {
+    top: 1px;
     > a {
-      padding: 8px;
+      padding: 7px;
       font-size: .75rem;
       font-weight: bold;
       color: #aaa;
