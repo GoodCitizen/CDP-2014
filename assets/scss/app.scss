@@ -92,9 +92,11 @@ ul{
 .menu-donate-now a {
   line-height: 45px;
 }
+.secondary-nav .dropdown li a {
+  line-height: 1.5;
+}
 .secondary-nav .dropdown li a,
 .secondary-nav ul li:hover > a {
-  line-height: 1.5;
   color: rgb(153, 153, 153) !important;
   background: #eee !important;
   &:hover {
