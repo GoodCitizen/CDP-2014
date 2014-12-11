@@ -63,20 +63,16 @@ ul{
 
 .banner { }
 
-.top-bar-section li:not(.has-form) a:not(.button) {
+
+.secondary-nav ul li a { // To override components/secondary-nav
+  padding: 0 15px;
   font-size: 12px;
   font-weight: bold;
-  line-height: 45px;
+  color: #999;
   background: #fff;
-  &:hover {
-    background: #eee;
-  }
 }
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-  color: rgb(153, 153, 153) !important;
-}
-.top-bar-section .has-dropdown>a {
-  padding-right: 16px !important;
+.secondary-nav .has-dropdown > a {
+  line-height: 45px;
   .caret {
     display: none !important;
     background: transparent;
@@ -89,15 +85,15 @@ ul{
     border-color: rgba(0,0,0,.2) transparent transparent transparent;
   }
 }
-.top-bar-section .dropdown li a,
-.top-bar-section ul li:hover>a {
+.secondary-nav .dropdown li a,
+.secondary-nav ul li:hover>a {
   color: rgb(153, 153, 153) !important;
   background: #eee !important;
   &:hover {
     color: $dark-grey !important;
   }
 }
-.top-bar-section .dropdown{
+.secondary-nav .dropdown{
   z-index: 210;
 }
 .main-nav {
