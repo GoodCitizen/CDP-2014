@@ -85,8 +85,16 @@ ul{
     border-color: rgba(0,0,0,.2) transparent transparent transparent;
   }
 }
+.top-bar-section .has-dropdown > a {
+  padding-right: 15px !important;
+}
+.menu-contact a,
+.menu-donate-now a {
+  line-height: 45px;
+}
 .secondary-nav .dropdown li a,
-.secondary-nav ul li:hover>a {
+.secondary-nav ul li:hover > a {
+  line-height: 1.5;
   color: rgb(153, 153, 153) !important;
   background: #eee !important;
   &:hover {
