@@ -20,7 +20,7 @@
             <?php include roots_template_path(); ?>
           </div> <!-- /.content-area -->
         </main> <!-- /.main.<?php echo roots_main_class(); ?> -->
-      <?php else; ?>
+      <?php else : ?>
         <main class="main <?php echo roots_main_class(); ?>" role="main">
           <div class="content-area">
             <?php include roots_template_path(); ?>
